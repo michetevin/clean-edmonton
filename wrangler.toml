@@ -1,0 +1,6 @@
+name = "clean-edmonton"
+main = "index.html"
+compatibility_date = "2024-01-01"
+
+# Optional: if you want to serve a custom domain later, add a route or use workers.dev
+# workers_dev = true
