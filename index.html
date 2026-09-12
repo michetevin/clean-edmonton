@@ -1,640 +1,2695 @@
- text.</think><!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-CA">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional couch and upholstery cleaning in Edmonton. Specializing in sofa, sectional, and furniture cleaning with before-and-after results you can see. Get a free quote today.">
-    <meta name="keywords" content="couch cleaning Edmonton, sofa cleaning Edmonton, upholstery cleaning Edmonton, sectional cleaning, pet stain removal, furniture cleaning">
-    <title>Clean Edmonton | Professional Couch & Upholstery Cleaning</title>
-    <meta property="og:title" content="Clean Edmonton | Professional Couch & Upholstery Cleaning">
-    <meta property="og:description" content="Professional couch and upholstery cleaning in Edmonton. Free quotes, before-and-after results, and mobile service.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_CA">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Clean Edmonton",
-            "description": "Professional couch and upholstery cleaning in Edmonton and surrounding areas.",
-            "telephone": "+1-587-566-9688",
-            "areaServed": ["Edmonton", "St. Albert", "Sherwood Park", "Beaumont", "Leduc", "Spruce Grove", "Fort Saskatchewan"],
-            "priceRange": "$$",
-            "openingHoursSpecification": [
-                { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:00", "closes": "19:00" }
-            ],
-            "image": "/images/hero-cleaning.jpg"
-        }
-    </script>
-    <style>
-        :root {
-            --primary: #1a3350;
-            --primary-light: #264a6e;
-            --accent: #1a7d6e;
-            --accent-light: #25a392;
-            --cta: #e8782a;
-            --cta-hover: #c9651e;
-            --cta-secondary: #1a7d6e;
-            --bg-light: #f7f8fa;
-            --bg-white: #ffffff;
-            --text: #2d2d2d;
-            --text-light: #5a5a5a;
-            --text-lighter: #7a7a7a;
-            --border: #e0e4e8;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-            --shadow: 0 4px 16px rgba(0,0,0,0.10);
-            --shadow-lg: 0 8px 30px rgba(0,0,0,0.13);
-            --radius-sm: 8px;
-            --radius: 12px;
-            --radius-lg: 18px;
-            --radius-btn: 28px;
-            --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            --transition: 0.25s ease;
-            --max-width: 1100px;
-            --header-height: 70px;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + 20px); }
-        body {
-            font-family: var(--font);
-            color: var(--text);
-            background: var(--bg-white);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            padding-bottom: 80px;
-        }
-        .site-header {
-            position: sticky; top: 0; z-index: 1000; background: #fff; border-bottom: 1px solid var(--border);
-            box-shadow: var(--shadow-sm); height: var(--header-height); display: flex; align-items: center; padding: 0 20px;
-        }
-        .header-inner { max-width: var(--max-width); width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; white-space: nowrap; }
-        .logo span { color: var(--accent); }
-        .nav-desktop { display: none; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
-        .nav-desktop a { text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.9rem; padding: 8px 13px; border-radius: 20px; transition: var(--transition); white-space: nowrap; }
-        .nav-desktop a:hover, .nav-desktop a.active { background: var(--bg-light); color: var(--accent); }
-        .btn-nav { background: var(--cta) !important; color: #fff !important; font-weight: 600 !important; padding: 9px 18px !important; border-radius: var(--radius-btn) !important; }
-        .btn-nav:hover { background: var(--cta-hover) !important; transform: translateY(-1px); }
-        .btn-nav-outline { background: transparent !important; color: var(--accent) !important; border: 2px solid var(--accent) !important; font-weight: 600 !important; padding: 8px 17px !important; border-radius: var(--radius-btn) !important; }
-        .btn-nav-outline:hover { background: var(--accent) !important; color: #fff !important; }
-        .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; padding: 8px; background: none; border: none; }
-        .hamburger span { display: block; width: 26px; height: 2.5px; background: var(--primary); border-radius: 2px; transition: var(--transition); }
-        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
-        .hamburger.open span:nth-child(2) { opacity: 0; }
-        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
-        .mobile-nav { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: #fff; z-index: 999; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px; transform: translateY(-100%); transition: transform 0.35s ease; padding: 30px; }
-        .mobile-nav.open { transform: translateY(0); }
-        .mobile-nav a { text-decoration: none; color: var(--text); font-size: 1.2rem; font-weight: 600; padding: 10px 20px; border-radius: 25px; }
-        .mobile-nav a:hover { background: var(--bg-light); color: var(--accent); }
-        .mobile-nav .btn-nav { color: #fff !important; font-size: 1.1rem; padding: 12px 28px !important; }
-        .section { padding: 50px 20px; }
-        .section-alt { background: var(--bg-light); }
-        .section-inner { max-width: var(--max-width); margin: 0 auto; }
-        .section-title { font-size: 1.8rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; letter-spacing: -0.5px; }
-        .section-subtitle { color: var(--text-light); font-size: 1rem; margin-bottom: 32px; max-width: 600px; }
-        .section-title.centered, .section-subtitle.centered { text-align: center; margin-left: auto; margin-right: auto; }
-        .hero { padding: 40px 20px 50px; background: linear-gradient(170deg, #f9fafb 0%, #eef5f4 50%, #f7f8fa 100%); }
-        .hero-inner { max-width: var(--max-width); margin: 0 auto; display: flex; flex-direction: column; gap: 30px; align-items: center; text-align: center; }
-        .hero-content h1 { font-size: 2rem; font-weight: 800; color: var(--primary); letter-spacing: -1px; line-height: 1.2; margin-bottom: 12px; }
-        .hero-content .subheadline { font-size: 1.05rem; color: var(--text-light); margin-bottom: 24px; line-height: 1.5; max-width: 500px; margin-left: auto; margin-right: auto; }
-        .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-        .btn { display: inline-block; padding: 13px 26px; border-radius: var(--radius-btn); font-weight: 600; font-size: 1rem; text-decoration: none; cursor: pointer; border: none; transition: var(--transition); text-align: center; white-space: nowrap; }
-        .btn-primary { background: var(--cta); color: #fff; box-shadow: 0 4px 14px rgba(232,120,42,0.35); }
-        .btn-primary:hover { background: var(--cta-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,120,42,0.4); }
-        .btn-secondary { background: var(--accent); color: #fff; box-shadow: 0 4px 14px rgba(26,125,110,0.3); }
-        .btn-secondary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26,125,110,0.38); }
-        .btn-outline { background: #fff; color: var(--primary); border: 2px solid var(--border); }
-        .btn-outline:hover { border-color: var(--accent); color: var(--accent); background: #f9fdfc; transform: translateY(-1px); }
-        .btn-white { background: #fff; color: var(--accent); font-weight: 700; }
-        .btn-white:hover { background: #f0f7f5; }
-        .hero-image { width: 100%; max-width: 500px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); aspect-ratio: 4/3; background: #ddd; }
-        .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .intro-text { font-size: 1.05rem; color: var(--text-light); max-width: 700px; line-height: 1.7; }
-        .intro-text p+p { margin-top: 14px; }
-        .cards-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-        .card { background: #fff; border-radius: var(--radius); padding: 24px 20px; box-shadow: var(--shadow); border: 1px solid var(--border); display: flex; flex-direction: column; gap: 10px; }
-        .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-        .card-icon { font-size: 2.2rem; width: 52px; height: 52px; border-radius: 50%; background: #e8f5f2; display: flex; align-items: center; justify-content: center; }
-        .card h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); }
-        .card p { font-size: 0.9rem; color: var(--text-light); }
-        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-        .why-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; }
-        .why-item .check { color: var(--accent); font-weight: 700; font-size: 1.1rem; }
-        .steps { display: flex; flex-direction: column; gap: 20px; }
-        .step { display: flex; gap: 16px; align-items: flex-start; }
-        .step-num { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .step h4 { font-size: 1rem; color: var(--primary); margin-bottom: 2px; }
-        .step p { font-size: 0.9rem; color: var(--text-light); }
-        .gallery-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; justify-content: center; }
-        .gallery-filters button { padding: 8px 18px; border-radius: 20px; border: 1.5px solid var(--border); background: #fff; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: var(--transition); color: var(--text); }
-        .gallery-filters button.active, .gallery-filters button:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-        .ba-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
-        .ba-pair { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); }
-        .ba-label-bar { display: flex; justify-content: space-between; padding: 10px 16px; font-weight: 600; font-size: 0.85rem; background: #fafbfc; border-bottom: 1px solid var(--border); }
-        .ba-label-bar .before-label { color: #c0392b; }
-        .ba-label-bar .after-label { color: #1a7d6e; }
-        .ba-comparison { position: relative; width: 100%; aspect-ratio: 4/3; overflow: hidden; cursor: ew-resize; user-select: none; background: #e0e0e0; }
-        .ba-comparison img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
-        .ba-comparison .img-after { clip-path: inset(0 50% 0 0); z-index: 2; }
-        .ba-comparison .img-before { z-index: 1; }
-        .ba-handle { position: absolute; top: 0; bottom: 0; width: 3px; background: #fff; z-index: 3; left: 50%; pointer-events: none; box-shadow: 0 0 8px rgba(0,0,0,0.25); }
-        .ba-handle::after { content: '⟷'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: #fff; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.2); pointer-events: auto; cursor: ew-resize; color: #555; }
-        .ba-info { padding: 12px 16px; font-size: 0.9rem; color: var(--text-light); }
-        .ba-info strong { color: var(--primary); }
-        .reviews-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-        .review-card { background: #fff; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
-        .review-stars { color: #f0a500; font-size: 1rem; letter-spacing: 2px; margin-bottom: 6px; }
-        .review-text { font-size: 0.95rem; font-style: italic; }
-        .review-author { font-size: 0.85rem; color: var(--text-lighter); margin-top: 8px; font-weight: 600; }
-        .review-service { font-size: 0.8rem; color: var(--accent); }
-        .area-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-        .area-tag { background: #e8f5f2; color: var(--accent); padding: 8px 16px; border-radius: 20px; font-weight: 600; font-size: 0.9rem; }
-        .faq-list { display: flex; flex-direction: column; gap: 10px; max-width: 750px; }
-        .faq-item { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #fff; }
-        .faq-question { width: 100%; text-align: left; padding: 16px 20px; font-weight: 600; font-size: 0.95rem; background: #fff; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--primary); }
-        .faq-arrow { transition: transform 0.3s; }
-        .faq-item.open .faq-arrow { transform: rotate(180deg); }
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s; padding: 0 20px; font-size: 0.9rem; color: var(--text-light); }
-        .faq-item.open .faq-answer { max-height: 400px; padding: 0 20px 16px; }
-        .quote-form { background: #fff; border-radius: var(--radius-lg); padding: 28px 20px; box-shadow: var(--shadow-lg); border: 1px solid var(--border); }
-        .form-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-        .form-group { display: flex; flex-direction: column; gap: 5px; }
-        .form-group label { font-weight: 600; font-size: 0.85rem; color: var(--primary); }
-        .form-group input, .form-group select, .form-group textarea { padding: 11px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: 0.95rem; font-family: var(--font); background: #fafbfc; }
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(26,125,110,0.1); background: #fff; }
-        .form-disclaimer { font-size: 0.8rem; color: var(--text-lighter); margin-top: 12px; text-align: center; }
-        .cta-section { text-align: center; padding: 50px 20px; background: linear-gradient(160deg, #1a3350 0%, #1a4a5e 100%); color: #fff; }
-        .cta-section .section-title { color: #fff; }
-        .cta-section p { color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 24px; }
-        .cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-        .site-footer { background: #1a1f28; color: #bbb; padding: 30px 20px; text-align: center; font-size: 0.85rem; }
-        .site-footer a { color: #ccc; text-decoration: underline; }
-        .footer-links { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 10px; }
-        .mobile-sticky-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; border-top: 1px solid var(--border); display: flex; gap: 10px; padding: 10px 16px; z-index: 998; box-shadow: 0 -2px 12px rgba(0,0,0,0.08); }
-        .mobile-sticky-bar .btn { flex: 1; padding: 12px 10px; font-size: 0.9rem; border-radius: 25px; }
-        .mobile-sticky-bar .btn-call { background: #fff; color: var(--accent); border: 2px solid var(--accent); font-weight: 700; }
-        .toast { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #1a7d6e; color: #fff; padding: 14px 28px; border-radius: 30px; z-index: 2000; font-weight: 600; box-shadow: 0 6px 20px rgba(0,0,0,0.25); animation: toastIn 0.4s ease, toastOut 0.4s ease 2.6s forwards; }
-        @keyframes toastIn { from { opacity: 0; transform: translateX(-50%) translateY(-30px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
-        @keyframes toastOut { from { opacity: 1; transform: translateX(-50%) translateY(0); } to { opacity: 0; transform: translateX(-50%) translateY(-30px); } }
-        @media (min-width:600px) {
-            .cards-grid { grid-template-columns: 1fr 1fr; }
-            .reviews-grid { grid-template-columns: 1fr 1fr; }
-            .form-grid { grid-template-columns: 1fr 1fr; }
-            .form-grid .full-width { grid-column: 1/-1; }
-            .ba-grid { grid-template-columns: 1fr 1fr; }
-            .why-grid { grid-template-columns: 1fr 1fr 1fr; }
-            .hero-content h1 { font-size: 2.4rem; }
-            .section-title { font-size: 2rem; }
-        }
-        @media (min-width:768px) {
-            .hamburger { display: none; }
-            .mobile-nav { display: none; }
-            .nav-desktop { display: flex; }
-            .hero-inner { flex-direction: row; text-align: left; gap: 40px; }
-            .hero-content { flex: 1; }
-            .hero-image { flex: 1; max-width: 450px; }
-            .hero-content .subheadline { margin-left: 0; margin-right: 0; }
-            .hero-buttons { justify-content: flex-start; }
-            .cards-grid { grid-template-columns: repeat(3,1fr); }
-            .reviews-grid { grid-template-columns: repeat(3,1fr); }
-            .steps { flex-direction: row; flex-wrap: wrap; }
-            .step { flex: 1; min-width: 170px; flex-direction: column; align-items: center; text-align: center; }
-            body { padding-bottom: 0; }
-            .mobile-sticky-bar { display: none; }
-            .section { padding: 60px 24px; }
-            .quote-form { padding: 36px 32px; }
-        }
-        @media (min-width:900px) {
-            .ba-grid { grid-template-columns: repeat(3,1fr); }
-            .cards-grid { grid-template-columns: repeat(4,1fr); }
-            .why-grid { grid-template-columns: repeat(5,1fr); }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Edmonton | Couch &amp; Upholstery Cleaning in Edmonton, AB</title>
+
+<meta name="description" content="Clean Edmonton is a mobile couch, sofa and upholstery cleaning service serving Edmonton, St. Albert, Sherwood Park and surrounding areas. Pet stain &amp; odour removal, fast drying, free quotes. Call +1 (587) 566-9688.">
+<meta name="keywords" content="couch cleaning Edmonton, sofa cleaning Edmonton, upholstery cleaning Edmonton, sectional cleaning, pet stain removal Edmonton, mattress and headboard cleaning, mobile carpet cleaner Edmonton">
+<meta name="author" content="Clean Edmonton">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1a3350">
+<link rel="canonical" href="https://cleanedmonton.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_CA">
+<meta property="og:site_name" content="Clean Edmonton">
+<meta property="og:title" content="Clean Edmonton | Couch &amp; Upholstery Cleaning in Edmonton, AB">
+<meta property="og:description" content="Mobile couch, sofa and upholstery cleaning across Edmonton &amp; area. Free quotes, pet odour specialists, fast drying. Call +1 (587) 566-9688.">
+<meta property="og:url" content="https://cleanedmonton.com/">
+<meta property="og:image" content="https://cleanedmonton.com/hero.jpg">
+<meta property="og:image:alt" content="Freshly cleaned fabric sofa in an Edmonton living room">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clean Edmonton | Couch &amp; Upholstery Cleaning">
+<meta name="twitter:description" content="Mobile couch, sofa and upholstery cleaning across Edmonton &amp; area. Free quotes. Call +1 (587) 566-9688.">
+<meta name="twitter:image" content="https://cleanedmonton.com/hero.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%231a3350'/><text y='72' x='50' font-size='58' text-anchor='middle' fill='%23ffffff' font-family='Segoe UI,Arial'>C</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://cleanedmonton.com/#business",
+  "name": "Clean Edmonton",
+  "description": "Mobile couch, sofa and upholstery cleaning service serving Edmonton, Alberta and surrounding communities.",
+  "url": "https://cleanedmonton.com/",
+  "telephone": "+1-587-566-9688",
+  "email": "info@cleanedmonton.com",
+  "image": "https://cleanedmonton.com/hero.jpg",
+  "priceRange": "$25 - $250",
+  "currenciesAccepted": "CAD",
+  "paymentAccepted": "Cash, Credit Card, Interac e-Transfer",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Edmonton",
+    "addressRegion": "AB",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.5461,
+    "longitude": -113.4938
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Edmonton" },
+    { "@type": "City", "name": "St. Albert" },
+    { "@type": "City", "name": "Sherwood Park" },
+    { "@type": "City", "name": "Fort Saskatchewan" },
+    { "@type": "City", "name": "Spruce Grove" },
+    { "@type": "City", "name": "Stony Plain" },
+    { "@type": "City", "name": "Leduc" },
+    { "@type": "City", "name": "Beaumont" },
+    { "@type": "City", "name": "Devon" },
+    { "@type": "City", "name": "Morinville" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "00:00",
+      "closes": "00:00"
+    }
+  ],
+  "sameAs": []
+}
+</script>
+
+<style>
+/* ============================================================
+   1. DESIGN TOKENS
+   ============================================================ */
+:root{
+  --navy:#1a3350;
+  --navy-dark:#132840;
+  --navy-soft:#24466c;
+  --teal:#1a7d6e;
+  --teal-dark:#146356;
+  --teal-soft:#e7f4f1;
+  --orange:#e8782a;
+  --orange-dark:#cf641b;
+  --orange-soft:#fdf0e5;
+
+  --ink:#22303f;
+  --muted:#5b6b7c;
+  --line:#e3e9ef;
+  --gray-50:#f6f8fa;
+  --gray-100:#eef2f6;
+  --white:#ffffff;
+
+  --radius-sm:10px;
+  --radius:16px;
+  --radius-lg:22px;
+  --radius-xl:28px;
+
+  --shadow-sm:0 2px 8px rgba(16,32,48,.06);
+  --shadow:0 10px 28px rgba(16,32,48,.09);
+  --shadow-lg:0 22px 48px rgba(16,32,48,.16);
+
+  --header-h:70px;
+  --maxw:1180px;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+/* ============================================================
+   2. BASE / RESET
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--header-h) + 16px);
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  font-family:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--white);
+  overflow-x:hidden;
+}
+
+body.nav-open{overflow:hidden;}
+
+img{max-width:100%;display:block;}
+
+a{color:inherit;text-decoration:none;}
+
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;}
+
+h1,h2,h3,h4{line-height:1.22;margin:0 0 .5em;color:var(--navy);font-weight:700;letter-spacing:-.01em;}
+
+h1{font-size:clamp(1.85rem,5.4vw,3.15rem);}
+h2{font-size:clamp(1.5rem,3.9vw,2.25rem);}
+h3{font-size:1.12rem;}
+
+p{margin:0 0 1em;}
+
+ul{margin:0;padding:0;list-style:none;}
+
+:focus-visible{
+  outline:3px solid var(--orange);
+  outline-offset:3px;
+  border-radius:6px;
+}
+
+/* ============================================================
+   3. LAYOUT HELPERS
+   ============================================================ */
+.container{
+  width:min(100% - 32px, var(--maxw));
+  margin-inline:auto;
+}
+
+.section{padding:56px 0;}
+
+.section--gray{background:var(--gray-50);}
+
+.section-head{
+  max-width:720px;
+  margin:0 auto 36px;
+  text-align:center;
+}
+
+.section-head p{
+  color:var(--muted);
+  font-size:1.03rem;
+  margin-bottom:0;
+}
+
+.eyebrow{
+  display:inline-block;
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--teal);
+  background:var(--teal-soft);
+  padding:6px 14px;
+  border-radius:999px;
+  margin-bottom:14px;
+}
+
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+
+/* ============================================================
+   4. BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:14px 24px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:.95rem;
+  line-height:1;
+  text-align:center;
+  border:2px solid transparent;
+  transition:transform .18s var(--ease),box-shadow .18s var(--ease),
+             background-color .18s var(--ease),color .18s var(--ease),
+             border-color .18s var(--ease);
+  white-space:nowrap;
+}
+
+.btn:hover{transform:translateY(-2px);}
+.btn:active{transform:translateY(0);}
+
+.btn--primary{background:var(--orange);color:#fff;box-shadow:0 8px 20px rgba(232,120,42,.32);}
+.btn--primary:hover{background:var(--orange-dark);box-shadow:0 12px 26px rgba(232,120,42,.4);}
+
+.btn--teal{background:var(--teal);color:#fff;box-shadow:0 8px 20px rgba(26,125,110,.28);}
+.btn--teal:hover{background:var(--teal-dark);}
+
+.btn--navy{background:var(--navy);color:#fff;}
+.btn--navy:hover{background:var(--navy-dark);}
+
+.btn--outline{border-color:var(--navy);color:var(--navy);background:transparent;}
+.btn--outline:hover{background:var(--navy);color:#fff;}
+
+.btn--ghost-light{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06);}
+.btn--ghost-light:hover{background:#fff;color:var(--navy);border-color:#fff;}
+
+.btn--sm{padding:11px 18px;font-size:.86rem;}
+.btn--block{width:100%;}
+
+/* ============================================================
+   5. HEADER
+   ============================================================ */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  transition:box-shadow .25s var(--ease);
+}
+
+.site-header.is-scrolled{box-shadow:0 6px 22px rgba(16,32,48,.09);}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  height:var(--header-h);
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:800;
+  font-size:1.08rem;
+  color:var(--navy);
+  letter-spacing:-.02em;
+  flex-shrink:0;
+}
+
+.logo-mark{
+  width:38px;height:38px;
+  border-radius:13px;
+  background:linear-gradient(140deg,var(--teal),var(--navy));
+  display:grid;place-items:center;
+  color:#fff;font-weight:800;font-size:1.05rem;
+  box-shadow:0 6px 14px rgba(26,125,110,.3);
+  flex-shrink:0;
+}
+
+.logo small{
+  display:block;
+  font-size:.66rem;
+  font-weight:600;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--teal);
+  line-height:1;
+  margin-top:3px;
+}
+
+.logo-text{display:flex;flex-direction:column;line-height:1.1;}
+
+.main-nav{display:none;}
+
+.header-actions{display:none;margin-left:auto;}
+
+/* Hamburger */
+.burger{
+  margin-left:auto;
+  width:46px;height:46px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  gap:0;
+  border:1px solid var(--line);
+  background:#fff;
+  flex-shrink:0;
+}
+
+.burger span{
+  display:block;
+  width:20px;height:2px;
+  background:var(--navy);
+  border-radius:2px;
+  transition:transform .28s var(--ease),opacity .2s var(--ease);
+  margin:2.5px 0;
+}
+
+.burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.burger.is-open span:nth-child(2){opacity:0;}
+.burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* ============================================================
+   6. MOBILE NAV
+   ============================================================ */
+.mobile-nav{
+  position:fixed;
+  inset:var(--header-h) 0 0 0;
+  z-index:55;
+  background:#fff;
+  padding:26px 22px 120px;
+  overflow-y:auto;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(-12px);
+  transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s;
+}
+
+.mobile-nav.is-open{opacity:1;visibility:visible;transform:none;}
+
+.mobile-nav a.mobile-link{
+  display:block;
+  padding:15px 4px;
+  font-size:1.12rem;
+  font-weight:600;
+  color:var(--navy);
+  border-bottom:1px solid var(--line);
+}
+
+.mobile-nav .mobile-cta{
+  display:grid;
+  gap:12px;
+  margin-top:26px;
+}
+
+.mobile-nav .mobile-meta{
+  margin-top:30px;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:.92rem;
+}
+
+.mobile-nav .mobile-meta a{color:var(--teal);font-weight:600;}
+
+/* ============================================================
+   7. HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  padding:40px 0 52px;
+  background:
+    radial-gradient(1100px 520px at 88% -8%,rgba(26,125,110,.13),transparent 62%),
+    radial-gradient(760px 420px at 4% 104%,rgba(232,120,42,.10),transparent 60%),
+    linear-gradient(180deg,#fbfcfd 0%,#ffffff 100%);
+  overflow:hidden;
+}
+
+.hero-grid{display:grid;gap:34px;align-items:center;}
+
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:7px 15px 7px 9px;
+  font-size:.8rem;
+  font-weight:600;
+  color:var(--navy);
+  box-shadow:var(--shadow-sm);
+  margin-bottom:18px;
+}
+
+.hero-badge b{color:var(--orange);font-weight:800;}
+
+.hero h1{margin-bottom:16px;}
+
+.hero h1 .accent{
+  color:var(--teal);
+  background:linear-gradient(180deg,transparent 62%,rgba(26,125,110,.16) 62%);
+  padding:0 3px;
+}
+
+.hero-sub{
+  font-size:1.06rem;
+  color:var(--muted);
+  max-width:56ch;
+  margin-bottom:26px;
+}
+
+.hero-ctas{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:26px;
+}
+
+.hero-ctas .btn{flex:1 1 auto;min-width:150px;}
+
+.hero-points{
+  display:grid;
+  gap:10px;
+  grid-template-columns:1fr;
+  font-size:.92rem;
+  color:var(--navy);
+  font-weight:600;
+}
+
+.hero-points li{display:flex;align-items:flex-start;gap:9px;}
+
+.hero-points .tick{
+  flex-shrink:0;
+  width:19px;height:19px;
+  margin-top:3px;
+  border-radius:50%;
+  background:var(--teal-soft);
+  color:var(--teal);
+  display:grid;place-items:center;
+  font-size:.68rem;
+  font-weight:900;
+}
+
+.hero-media{
+  position:relative;
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+  box-shadow:var(--shadow-lg);
+  background:linear-gradient(140deg,var(--navy),var(--teal));
+  aspect-ratio:4/3;
+}
+
+.hero-media img{width:100%;height:100%;object-fit:cover;}
+
+.hero-float{
+  position:absolute;
+  left:16px;
+  bottom:16px;
+  right:16px;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-radius:var(--radius);
+  padding:12px 16px;
+  box-shadow:var(--shadow);
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.hero-float .stars{color:var(--orange);font-size:.95rem;letter-spacing:1px;line-height:1;}
+
+.hero-float p{margin:0;font-size:.83rem;color:var(--muted);line-height:1.35;}
+
+.hero-float strong{display:block;color:var(--navy);font-size:.9rem;}
+
+/* ============================================================
+   8. INTRO
+   ============================================================ */
+.intro-grid{display:grid;gap:26px;align-items:center;}
+
+.intro-copy p{color:var(--muted);font-size:1.02rem;}
+
+.intro-stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:6px;
+}
+
+.stat{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:16px 12px;
+  text-align:center;
+  box-shadow:var(--shadow-sm);
+}
+
+.stat b{
+  display:block;
+  font-size:1.45rem;
+  color:var(--teal);
+  line-height:1.1;
+}
+
+.stat span{
+  font-size:.74rem;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  color:var(--muted);
+  font-weight:700;
+}
+
+/* ============================================================
+   9. BEFORE / AFTER GALLERY
+   ============================================================ */
+.filters{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:9px;
+  margin-bottom:28px;
+}
+
+.filter-btn{
+  padding:10px 18px;
+  border-radius:999px;
+  border:1.5px solid var(--line);
+  background:#fff;
+  font-size:.86rem;
+  font-weight:700;
+  color:var(--muted);
+  transition:all .18s var(--ease);
+}
+
+.filter-btn:hover{border-color:var(--teal);color:var(--teal);}
+
+.filter-btn.is-active{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#fff;
+  box-shadow:0 6px 16px rgba(26,51,80,.24);
+}
+
+.ba-grid{display:grid;gap:22px;}
+
+.ba-pair{
+  background:#fff;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  border:1px solid var(--line);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease);
+}
+
+.ba-pair:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+
+.ba-pair.is-hidden{display:none;}
+
+.ba-slider{
+  --pos:50%;
+  position:relative;
+  aspect-ratio:4/3;
+  overflow:hidden;
+  cursor:ew-resize;
+  touch-action:pan-y;
+  user-select:none;
+  -webkit-user-select:none;
+  background:var(--gray-100);
+}
+
+.ba-slider img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  pointer-events:none;
+  -webkit-user-drag:none;
+}
+
+.ba-before{clip-path:inset(0 calc(100% - var(--pos)) 0 0);}
+.ba-after{clip-path:inset(0 0 0 var(--pos));}
+
+.ba-handle{
+  position:absolute;
+  top:0;bottom:0;
+  left:var(--pos);
+  width:3px;
+  background:#fff;
+  transform:translateX(-50%);
+  box-shadow:0 0 12px rgba(0,0,0,.35);
+  pointer-events:none;
+}
+
+.ba-handle::after{
+  content:"";
+  position:absolute;
+  top:50%;left:50%;
+  width:42px;height:42px;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 6px 18px rgba(0,0,0,.28);
+}
+
+.ba-handle::before{
+  content:"‹ ›";
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-52%);
+  font-size:1.15rem;
+  font-weight:800;
+  color:var(--navy);
+  letter-spacing:1px;
+  z-index:2;
+  line-height:1;
+}
+
+.ba-slider.is-dragging .ba-handle::after{transform:translate(-50%,-50%) scale(1.08);}
+
+.ba-tag{
+  position:absolute;
+  top:12px;
+  padding:5px 12px;
+  border-radius:999px;
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:#fff;
+  pointer-events:none;
+  backdrop-filter:blur(4px);
+}
+
+.ba-tag--before{left:12px;background:rgba(26,51,80,.82);}
+.ba-tag--after{right:12px;background:rgba(26,125,110,.88);}
+
+.ba-caption{
+  margin:0;
+  padding:15px 18px;
+  font-size:.9rem;
+  font-weight:600;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.ba-caption span{
+  font-size:.74rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+  color:var(--teal);
+  background:var(--teal-soft);
+  padding:4px 10px;
+  border-radius:999px;
+  white-space:nowrap;
+}
+
+.drag-hint{
+  text-align:center;
+  font-size:.85rem;
+  color:var(--muted);
+  margin:22px 0 0;
+}
+
+/* ============================================================
+   10. SERVICES
+   ============================================================ */
+.services-grid{display:grid;gap:18px;}
+
+.service-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:26px 22px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .22s var(--ease),box-shadow .22s var(--ease),border-color .22s var(--ease);
+}
+
+.service-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+  border-color:rgba(26,125,110,.35);
+}
+
+.service-icon{
+  width:52px;height:52px;
+  border-radius:16px;
+  background:var(--teal-soft);
+  display:grid;place-items:center;
+  font-size:1.45rem;
+  margin-bottom:16px;
+}
+
+.service-card h3{margin-bottom:8px;}
+
+.service-card p{
+  font-size:.92rem;
+  color:var(--muted);
+  margin:0;
+}
+
+/* ============================================================
+   11. HOW IT WORKS
+   ============================================================ */
+.steps{display:grid;gap:16px;counter-reset:step;}
+
+.step{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:26px 22px 22px;
+  box-shadow:var(--shadow-sm);
+}
+
+.step-num{
+  width:42px;height:42px;
+  border-radius:14px;
+  background:linear-gradient(140deg,var(--navy),var(--navy-soft));
+  color:#fff;
+  display:grid;place-items:center;
+  font-weight:800;
+  font-size:1rem;
+  margin-bottom:14px;
+}
+
+.step h3{font-size:1.03rem;margin-bottom:6px;}
+
+.step p{font-size:.9rem;color:var(--muted);margin:0;}
+
+/* ============================================================
+   12. PRICING
+   ============================================================ */
+.price-grid{display:grid;gap:14px;}
+
+.price-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s var(--ease);
+}
+
+.price-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(26,125,110,.4);
+  box-shadow:var(--shadow);
+}
+
+.price-card .name{
+  font-weight:700;
+  color:var(--navy);
+  font-size:.98rem;
+  display:block;
+}
+
+.price-card .note{
+  display:block;
+  font-size:.78rem;
+  color:var(--muted);
+  font-weight:500;
+  margin-top:2px;
+}
+
+.price-card .amount{
+  font-weight:800;
+  color:var(--teal);
+  font-size:1.16rem;
+  white-space:nowrap;
+}
+
+.price-card .amount small{
+  display:block;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:right;
+}
+
+.price-note{
+  margin-top:26px;
+  text-align:center;
+  font-size:.86rem;
+  color:var(--muted);
+  background:#fff;
+  border:1px dashed var(--line);
+  border-radius:var(--radius);
+  padding:16px 20px;
+}
+
+/* ============================================================
+   13. SERVICE AREA
+   ============================================================ */
+.area-cloud{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  max-width:900px;
+  margin-inline:auto;
+}
+
+.area-tag{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:9px 18px;
+  font-size:.87rem;
+  font-weight:600;
+  color:var(--navy);
+  box-shadow:var(--shadow-sm);
+  transition:all .18s var(--ease);
+}
+
+.area-tag:hover{
+  background:var(--teal);
+  border-color:var(--teal);
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+.area-tag--core{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#fff;
+}
+
+/* ============================================================
+   14. REVIEWS
+   ============================================================ */
+.reviews-grid{display:grid;gap:18px;}
+
+.review-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:26px 22px;
+  box-shadow:var(--shadow-sm);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.review-card .stars{color:var(--orange);letter-spacing:2px;font-size:.95rem;}
+
+.review-card blockquote{
+  margin:0;
+  font-size:.95rem;
+  color:var(--ink);
+  line-height:1.6;
+}
+
+.review-card .who{
+  margin-top:auto;
+  font-size:.84rem;
+  color:var(--muted);
+  font-weight:600;
+}
+
+.review-card .who b{color:var(--navy);display:block;font-size:.9rem;}
+
+.review-link{text-align:center;margin-top:26px;font-size:.9rem;color:var(--muted);}
+.review-link a{color:var(--teal);font-weight:700;text-decoration:underline;}
+
+/* ============================================================
+   15. FORMS
+   ============================================================ */
+.form-wrap{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-xl);
+  padding:28px 22px;
+  box-shadow:var(--shadow);
+}
+
+.form-grid{display:grid;gap:16px;}
+
+.field{display:flex;flex-direction:column;gap:6px;}
+
+.field label{
+  font-size:.83rem;
+  font-weight:700;
+  color:var(--navy);
+  letter-spacing:.01em;
+}
+
+.field .req{color:var(--orange);}
+
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  padding:13px 15px;
+  font:inherit;
+  font-size:.94rem;
+  color:var(--ink);
+  background:var(--gray-50);
+  border:1.5px solid var(--line);
+  border-radius:var(--radius-sm);
+  transition:border-color .18s var(--ease),background-color .18s var(--ease),box-shadow .18s var(--ease);
+  appearance:none;
+}
+
+.field select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235b6b7c' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 15px center;
+  padding-right:40px;
+}
+
+.field textarea{resize:vertical;min-height:104px;}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  outline:none;
+  background:#fff;
+  border-color:var(--teal);
+  box-shadow:0 0 0 4px rgba(26,125,110,.12);
+}
+
+.field input[type="file"]{
+  padding:11px 12px;
+  background:#fff;
+  cursor:pointer;
+  font-size:.86rem;
+}
+
+.field input[type="file"]::file-selector-button{
+  font:inherit;
+  font-size:.84rem;
+  font-weight:700;
+  color:#fff;
+  background:var(--navy);
+  border:0;
+  border-radius:999px;
+  padding:8px 16px;
+  margin-right:12px;
+  cursor:pointer;
+}
+
+.field-hint{font-size:.76rem;color:var(--muted);}
+
+.form-foot{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:6px;
+}
+
+.form-foot .privacy{
+  font-size:.78rem;
+  color:var(--muted);
+  margin:0;
+  text-align:center;
+}
+
+.form-aside{
+  background:linear-gradient(150deg,var(--navy),var(--navy-soft));
+  color:#fff;
+  border-radius:var(--radius-xl);
+  padding:30px 24px;
+  box-shadow:var(--shadow);
+}
+
+.form-aside h3{color:#fff;font-size:1.25rem;}
+
+.form-aside p{color:rgba(255,255,255,.8);font-size:.94rem;}
+
+.form-aside ul{display:grid;gap:12px;margin:20px 0 26px;}
+
+.form-aside li{
+  display:flex;
+  gap:11px;
+  align-items:flex-start;
+  font-size:.92rem;
+  color:rgba(255,255,255,.92);
+}
+
+.form-aside li .tick{
+  flex-shrink:0;
+  width:20px;height:20px;
+  margin-top:2px;
+  border-radius:50%;
+  background:rgba(255,255,255,.15);
+  color:#7fd8c8;
+  display:grid;place-items:center;
+  font-size:.7rem;
+  font-weight:900;
+}
+
+.aside-phone{
+  display:block;
+  font-size:1.4rem;
+  font-weight:800;
+  color:#fff;
+  margin-bottom:4px;
+}
+
+.aside-phone-label{
+  font-size:.76rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.6);
+  font-weight:700;
+}
+
+.form-layout{display:grid;gap:24px;}
+
+/* ============================================================
+   16. FAQ
+   ============================================================ */
+.faq-list{
+  max-width:820px;
+  margin-inline:auto;
+  display:grid;
+  gap:12px;
+}
+
+.faq-item{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:border-color .2s var(--ease),box-shadow .2s var(--ease);
+}
+
+.faq-item.is-open{
+  border-color:rgba(26,125,110,.4);
+  box-shadow:var(--shadow);
+}
+
+.faq-q{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:18px 20px;
+  text-align:left;
+  font-weight:700;
+  font-size:.98rem;
+  color:var(--navy);
+}
+
+.faq-q .chev{
+  flex-shrink:0;
+  width:26px;height:26px;
+  border-radius:50%;
+  background:var(--teal-soft);
+  color:var(--teal);
+  display:grid;place-items:center;
+  font-size:.8rem;
+  font-weight:900;
+  transition:transform .28s var(--ease),background-color .2s var(--ease),color .2s var(--ease);
+}
+
+.faq-item.is-open .faq-q .chev{
+  transform:rotate(180deg);
+  background:var(--teal);
+  color:#fff;
+}
+
+.faq-a{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .34s var(--ease);
+}
+
+.faq-a-inner{
+  padding:0 20px 20px;
+  font-size:.93rem;
+  color:var(--muted);
+}
+
+.faq-a-inner p:last-child{margin-bottom:0;}
+
+/* ============================================================
+   17. CTA BANNER
+   ============================================================ */
+.cta-banner{
+  background:linear-gradient(135deg,var(--navy) 0%,#123a52 45%,var(--teal-dark) 100%);
+  color:#fff;
+  border-radius:var(--radius-xl);
+  padding:44px 26px;
+  text-align:center;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+  overflow:hidden;
+}
+
+.cta-banner::before{
+  content:"";
+  position:absolute;
+  width:420px;height:420px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.13),transparent 68%);
+  top:-190px;right:-120px;
+  pointer-events:none;
+}
+
+.cta-banner h2{color:#fff;position:relative;}
+
+.cta-banner p{
+  color:rgba(255,255,255,.82);
+  max-width:60ch;
+  margin-inline:auto;
+  position:relative;
+}
+
+.cta-banner .cta-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+  margin-top:24px;
+  position:relative;
+}
+
+.cta-banner .cta-row .btn{flex:1 1 auto;min-width:160px;}
+
+/* ============================================================
+   18. CONTACT
+   ============================================================ */
+.contact-grid{display:grid;gap:18px;}
+
+.contact-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:24px 22px;
+  box-shadow:var(--shadow-sm);
+}
+
+.contact-card .service-icon{margin-bottom:14px;}
+
+.contact-card h3{font-size:1rem;margin-bottom:6px;}
+
+.contact-card p,
+.contact-card a{
+  font-size:.93rem;
+  color:var(--muted);
+  margin:0;
+  display:block;
+}
+
+.contact-card a.big{
+  font-size:1.12rem;
+  font-weight:800;
+  color:var(--navy);
+  margin-bottom:2px;
+}
+
+.contact-card a.big:hover{color:var(--teal);}
+
+.social-row{display:flex;gap:10px;margin-top:12px;}
+
+.social-row a{
+  width:40px;height:40px;
+  border-radius:12px;
+  background:var(--gray-50);
+  border:1px solid var(--line);
+  display:grid;place-items:center;
+  font-size:.95rem;
+  transition:all .18s var(--ease);
+}
+
+.social-row a:hover{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+/* ============================================================
+   19. DISCLAIMERS
+   ============================================================ */
+.disclaimers{
+  background:var(--gray-50);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:26px 22px;
+}
+
+.disclaimers h3{
+  font-size:.86rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--muted);
+  margin-bottom:14px;
+}
+
+.disclaimers ul{
+  display:grid;
+  gap:9px;
+}
+
+.disclaimers li{
+  position:relative;
+  padding-left:18px;
+  font-size:.85rem;
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.disclaimers li::before{
+  content:"";
+  position:absolute;
+  left:0;top:.6em;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--orange);
+}
+
+/* ============================================================
+   20. FOOTER
+   ============================================================ */
+.site-footer{
+  background:var(--navy-dark);
+  color:rgba(255,255,255,.72);
+  padding:44px 0 30px;
+  font-size:.9rem;
+}
+
+.footer-grid{display:grid;gap:30px;}
+
+.site-footer h4{
+  color:#fff;
+  font-size:.82rem;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+.site-footer a:hover{color:#fff;text-decoration:underline;}
+
+.footer-links{display:grid;gap:9px;}
+
+.footer-brand .logo{color:#fff;margin-bottom:14px;}
+.footer-brand .logo small{color:#7fd8c8;}
+
+.footer-brand p{font-size:.87rem;line-height:1.6;max-width:38ch;}
+
+.footer-bottom{
+  margin-top:34px;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.12);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  font-size:.8rem;
+  text-align:center;
+  color:rgba(255,255,255,.55);
+}
+
+/* ============================================================
+   21. MOBILE STICKY BAR
+   ============================================================ */
+.mobile-bar{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  z-index:70;
+  display:flex;
+  gap:10px;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+  box-shadow:0 -6px 22px rgba(16,32,48,.1);
+}
+
+.mobile-bar .btn{flex:1;padding:14px 10px;font-size:.9rem;}
+
+/* ============================================================
+   22. TOAST
+   ============================================================ */
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:96px;
+  transform:translate(-50%,26px);
+  z-index:120;
+  max-width:min(92vw,420px);
+  background:var(--navy);
+  color:#fff;
+  padding:15px 22px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-lg);
+  font-size:.92rem;
+  font-weight:600;
+  text-align:center;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s;
+}
+
+.toast.is-visible{
+  opacity:1;
+  visibility:visible;
+  transform:translate(-50%,0);
+}
+
+.toast::before{
+  content:"✓";
+  display:inline-grid;
+  place-items:center;
+  width:20px;height:20px;
+  margin-right:9px;
+  border-radius:50%;
+  background:var(--teal);
+  color:#fff;
+  font-size:.72rem;
+  font-weight:900;
+  vertical-align:-4px;
+}
+
+/* ============================================================
+   23. RESPONSIVE — 600px
+   ============================================================ */
+@media (min-width:600px){
+  .section{padding:68px 0;}
+
+  .hero-points{grid-template-columns:1fr 1fr;}
+
+  .ba-grid{grid-template-columns:repeat(2,1fr);}
+
+  .services-grid{grid-template-columns:repeat(2,1fr);}
+
+  .price-grid{grid-template-columns:repeat(2,1fr);}
+
+  .reviews-grid{grid-template-columns:repeat(2,1fr);}
+
+  .steps{grid-template-columns:repeat(2,1fr);}
+
+  .form-grid--2{grid-template-columns:1fr 1fr;}
+
+  .contact-grid{grid-template-columns:repeat(2,1fr);}
+
+  .cta-banner{padding:56px 40px;}
+
+  .footer-grid{grid-template-columns:repeat(2,1fr);}
+
+  .footer-bottom{flex-direction:row;justify-content:space-between;text-align:left;}
+}
+
+/* ============================================================
+   24. RESPONSIVE — 768px
+   ============================================================ */
+@media (min-width:768px){
+  .form-wrap{padding:36px 34px;}
+
+  .form-foot{flex-direction:row;align-items:center;justify-content:space-between;}
+  .form-foot .privacy{text-align:left;}
+
+  .hero{padding:56px 0 72px;}
+
+  .price-grid{grid-template-columns:repeat(3,1fr);}
+
+  .reviews-grid{grid-template-columns:repeat(3,1fr);}
+
+  .footer-grid{grid-template-columns:1.4fr 1fr 1fr 1fr;}
+}
+
+/* ============================================================
+   25. RESPONSIVE — 900px
+   ============================================================ */
+@media (min-width:900px){
+  :root{--header-h:78px;}
+
+  .burger{display:none;}
+  .mobile-nav{display:none;}
+
+  .main-nav{
+    display:flex;
+    align-items:center;
+    gap:4px;
+    margin-left:auto;
+  }
+
+  .main-nav a{
+    padding:10px 13px;
+    border-radius:999px;
+    font-size:.9rem;
+    font-weight:600;
+    color:var(--navy);
+    transition:background-color .18s var(--ease),color .18s var(--ease);
+  }
+
+  .main-nav a:hover{background:var(--gray-100);color:var(--teal);}
+
+  .header-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-left:10px;
+  }
+
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:52px;}
+
+  .hero{padding:72px 0 88px;}
+
+  .intro-grid{grid-template-columns:1.15fr .85fr;gap:48px;}
+
+  .services-grid{grid-template-columns:repeat(4,1fr);}
+
+  .steps{grid-template-columns:repeat(5,1fr);}
+
+  .steps .step::after{
+    content:"";
+    position:absolute;
+    top:46px;right:-9px;
+    width:18px;height:2px;
+    background:var(--line);
+  }
+
+  .steps .step:last-child::after{display:none;}
+
+  .form-layout{grid-template-columns:1.35fr .65fr;gap:28px;align-items:start;}
+
+  .section{padding:84px 0;}
+
+  .mobile-bar{display:none;}
+}
+
+/* ============================================================
+   26. MOBILE STICKY BAR SPACING
+   ============================================================ */
+@media (max-width:899px){
+  body{padding-bottom:76px;}
+  .toast{bottom:88px;}
+}
+
+/* ============================================================
+   27. MOTION PREFERENCES
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    transition-duration:.001ms !important;
+  }
+}
+</style>
 </head>
 <body>
-    <header class="site-header" id="header">
-        <div class="header-inner">
-            <a href="#hero" class="logo">Clean<span>Edmonton</span></a>
-            <nav class="nav-desktop" id="navDesktop">
-                <a href="#hero" class="active">Home</a>
-                <a href="#services">Services</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#gallery">Before & After</a>
-                <a href="#about">About</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
-                <a href="#quote" class="btn-nav">Get a Free Quote</a>
-                <a href="tel:+15875669688" class="btn-nav-outline">📞 Call Now</a>
-            </nav>
-            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-        </div>
-    </header>
-    <nav class="mobile-nav" id="mobileNav">
-        <a href="#hero">Home</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#gallery">Before & After</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-        <a href="#quote" class="btn-nav">Get a Free Quote</a>
-        <a href="tel:+15875669688" style="color:var(--accent);font-weight:700;">📞 Call: +1 (587) 566-9688</a>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo" aria-label="Clean Edmonton — home">
+      <span class="logo-mark" aria-hidden="true">C</span>
+      <span class="logo-text">
+        Clean Edmonton
+        <small>Couch &amp; Upholstery</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#gallery">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#areas">Service Area</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="hero-inner">
-            <div class="hero-content">
-                <h1>Professional Couch &<br>Upholstery Cleaning</h1>
-                <p class="subheadline">We deep-clean couches, sectionals, chairs and other upholstered furniture to remove built-up dirt, stains, odors and pet messes.</p>
-                <div class="hero-buttons">
-                    <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
-                    <a href="#booking" class="btn btn-secondary">Book a Cleaning</a>
-                    <a href="tel:+15875669688" class="btn btn-outline">📞 Call Now</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=450&fit=crop&auto=format" alt="Professional couch cleaning service" loading="eager">
-            </div>
-        </div>
-    </section>
-
-    <!-- INTRO -->
-    <section class="section" id="intro">
-        <div class="section-inner">
-            <div class="intro-text">
-                <p>Your furniture collects dirt, body oils, food spills, pet hair and odors over time. Our professional upholstery cleaning service helps refresh your furniture and improve its appearance <strong>without the cost of replacing it</strong>.</p>
-                <p>We clean couches, sectionals, loveseats, recliners, dining chairs, office chairs and other fabric furniture throughout <strong>Edmonton and surrounding areas</strong>.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- BEFORE & AFTER GALLERY (moved right after intro) -->
-    <section class="section section-alt" id="gallery">
-        <div class="section-inner">
-            <h2 class="section-title centered">Before & After Gallery</h2>
-            <p class="section-subtitle centered">Real results from our couch and upholstery cleaning services. <em>Drag the slider handle to compare.</em></p>
-            <div class="gallery-filters">
-                <button class="active" data-filter="all">All</button>
-                <button data-filter="sofas">Sofas</button>
-                <button data-filter="large-sofas">Large Sofas</button>
-                <button data-filter="headboards">Headboards</button>
-                <button data-filter="walls">Walls</button>
-            </div>
-            <div class="ba-grid" id="baGrid">
-                <div class="ba-pair" data-category="sofas">
-                    <div class="ba-label-bar"><span class="before-label">BEFORE</span><span class="after-label">AFTER</span></div>
-                    <div class="ba-comparison">
-                        <img src="/sofa unclean.jpeg" alt="Sofa before cleaning" class="img-before">
-                        <img src="/sofa clean.jpeg" alt="Sofa after cleaning" class="img-after">
-                        <div class="ba-handle"></div>
-                    </div>
-                    <div class="ba-info"><strong>Fabric Sofa</strong> — Deep extraction removing everyday dirt and restoring fabric color.</div>
-                </div>
-                <div class="ba-pair" data-category="large-sofas">
-                    <div class="ba-label-bar"><span class="before-label">BEFORE</span><span class="after-label">AFTER</span></div>
-                    <div class="ba-comparison">
-                        <img src="/large sofa unclean.jpeg" alt="Large sofa before cleaning" class="img-before">
-                        <img src="/large sofa clean.jpeg" alt="Large sofa after cleaning" class="img-after">
-                        <div class="ba-handle"></div>
-                    </div>
-                    <div class="ba-info"><strong>Large Sofa</strong> — Heavy soil and dust lifted from a heavily used family couch.</div>
-                </div>
-                <div class="ba-pair" data-category="headboards">
-                    <div class="ba-label-bar"><span class="before-label">BEFORE</span><span class="after-label">AFTER</span></div>
-                    <div class="ba-comparison">
-                        <img src="/headboard unclean.jpeg" alt="Headboard before cleaning" class="img-before">
-                        <img src="/headboard clean.jpeg" alt="Headboard after cleaning" class="img-after">
-                        <div class="ba-handle"></div>
-                    </div>
-                    <div class="ba-info"><strong>Upholstered Headboard</strong> — Removal of body oils and dust marks for a fresh bedroom feel.</div>
-                </div>
-                <div class="ba-pair" data-category="walls">
-                    <div class="ba-label-bar"><span class="before-label">BEFORE</span><span class="after-label">AFTER</span></div>
-                    <div class="ba-comparison">
-                        <img src="/wall unclean.jpeg" alt="Wall before cleaning" class="img-before">
-                        <img src="/wall clean.jpeg" alt="Wall after cleaning" class="img-after">
-                        <div class="ba-handle"></div>
-                    </div>
-                    <div class="ba-info"><strong>Wall & Baseboard Area</strong> — Stain and scuff removal bringing surfaces back to life.</div>
-                </div>
-            </div>
-            <p style="text-align:center;margin-top:16px;font-size:0.85rem;color:var(--text-lighter);"><em>⚠️ Results vary. Some stains may be permanent. See disclaimers below.</em></p>
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
-        <div class="section-inner">
-            <h2 class="section-title centered">Our Services</h2>
-            <p class="section-subtitle centered">Specialized couch and upholstery cleaning for every type of fabric furniture.</p>
-            <div class="cards-grid">
-                <div class="card"><div class="card-icon">🛋️</div><h3>Couch Cleaning</h3><p>Deep cleaning for fabric couches to remove dirt, spills, odors.</p></div>
-                <div class="card"><div class="card-icon">🪑</div><h3>Sectional Cleaning</h3><p>Professional cleaning for small, medium and large sectionals.</p></div>
-                <div class="card"><div class="card-icon">💺</div><h3>Loveseat Cleaning</h3><p>Cleaning for two-seat sofas and compact furniture.</p></div>
-                <div class="card"><div class="card-icon">🪑</div><h3>Recliner & Armchair</h3><p>Fabric recliners, accent chairs and armchairs.</p></div>
-                <div class="card"><div class="card-icon">🍽️</div><h3>Dining Chair Cleaning</h3><p>Upholstered dining chairs and seat cushions.</p></div>
-                <div class="card"><div class="card-icon">🐾</div><h3>Pet Stain & Odor</h3><p>Special treatment for pet accidents and odors.</p></div>
-                <div class="card"><div class="card-icon">🦶</div><h3>Ottoman & Bench</h3><p>Cleaning for upholstered ottomans and benches.</p></div>
-                <div class="card"><div class="card-icon">💼</div><h3>Office Chair Cleaning</h3><p>Fabric office chairs and commercial seating.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="section section-alt" id="why-us">
-        <div class="section-inner">
-            <h2 class="section-title centered">Why Choose Clean Edmonton</h2>
-            <p class="section-subtitle centered">We're couch and upholstery specialists — not general cleaners.</p>
-            <div class="why-grid">
-                <div class="why-item"><span class="check">✓</span> Couch & upholstery specialists</div>
-                <div class="why-item"><span class="check">✓</span> Professional equipment</div>
-                <div class="why-item"><span class="check">✓</span> Careful furniture treatment</div>
-                <div class="why-item"><span class="check">✓</span> Pet & family-conscious products</div>
-                <div class="why-item"><span class="check">✓</span> Honest & clear pricing</div>
-                <div class="why-item"><span class="check">✓</span> Convenient mobile service</div>
-                <div class="why-item"><span class="check">✓</span> Easy online quotes</div>
-                <div class="why-item"><span class="check">✓</span> Before-and-after results</div>
-                <div class="why-item"><span class="check">✓</span> Friendly & reliable service</div>
-                <div class="why-item"><span class="check">✓</span> Satisfaction-focused</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="section" id="how-it-works">
-        <div class="section-inner">
-            <h2 class="section-title centered">How It Works</h2>
-            <p class="section-subtitle centered">Simple process from quote to clean furniture.</p>
-            <div class="steps">
-                <div class="step"><div class="step-num">1</div><div><h4>Request a Quote</h4><p>Send pictures and details about your furniture.</p></div></div>
-                <div class="step"><div class="step-num">2</div><div><h4>Receive Estimate</h4><p>We review size, material and condition.</p></div></div>
-                <div class="step"><div class="step-num">3</div><div><h4>Choose Appointment</h4><p>Select a date and time that works.</p></div></div>
-                <div class="step"><div class="step-num">4</div><div><h4>We Clean</h4><p>Inspect, pre-treat, clean and extract.</p></div></div>
-                <div class="step"><div class="step-num">5</div><div><h4>Allow to Dry</h4><p>Drying time varies by material and conditions.</p></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="section section-alt" id="pricing">
-        <div class="section-inner">
-            <h2 class="section-title centered">Pricing</h2>
-            <p class="section-subtitle centered">Transparent starting prices. Send pictures for an accurate quote.</p>
-            <div class="cards-grid" style="max-width:900px;margin:0 auto;">
-                <div class="card"><h3>Dining Chair</h3><p>Starting at <strong>$25</strong></p></div>
-                <div class="card"><h3>Office Chair</h3><p>Starting at <strong>$35</strong></p></div>
-                <div class="card"><h3>Armchair</h3><p>Starting at <strong>$55</strong></p></div>
-                <div class="card"><h3>Recliner</h3><p>Starting at <strong>$65</strong></p></div>
-                <div class="card"><h3>Loveseat</h3><p>Starting at <strong>$85</strong></p></div>
-                <div class="card"><h3>3-Seat Couch</h3><p>Starting at <strong>$110</strong></p></div>
-                <div class="card"><h3>Small Sectional</h3><p>Starting at <strong>$145</strong></p></div>
-                <div class="card"><h3>Large Sectional</h3><p><strong>Custom quote</strong></p></div>
-                <div class="card"><h3>Ottoman / Bench</h3><p>Starting at <strong>$30</strong></p></div>
-                <div class="card"><h3>Headboard</h3><p>Starting at <strong>$40</strong></p></div>
-                <div class="card"><h3>Pet Stain Treatment</h3><p><strong>Additional charge</strong></p></div>
-                <div class="card"><h3>Pet Odor Treatment</h3><p><strong>Additional charge</strong></p></div>
-            </div>
-            <p style="text-align:center;margin-top:20px;font-size:0.85rem;color:var(--text-lighter);">Final pricing depends on furniture size, material, condition, stains, and location. <strong>Send pictures for the most accurate quote.</strong></p>
-        </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section class="section" id="reviews">
-        <div class="section-inner">
-            <h2 class="section-title centered">What Our Customers Say</h2>
-            <div class="reviews-grid">
-                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Our sectional looks brand new! Pet stains almost completely gone."</p><p class="review-author">— Sarah M.</p><p class="review-service">Sectional Cleaning · Edmonton</p></div>
-                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Incredible before-and-after on dining chairs. Very professional."</p><p class="review-author">— David L.</p><p class="review-service">Dining Chairs · Sherwood Park</p></div>
-                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Finally a company that specializes in upholstery. Recliner looks and smells fresh."</p><p class="review-author">— Maria K.</p><p class="review-service">Recliner · St. Albert</p></div>
-            </div>
-            <div style="text-align:center;margin-top:20px;"><a href="#" class="btn btn-outline">⭐ Leave Us a Review</a></div>
-        </div>
-    </section>
-
-    <!-- SERVICE AREA -->
-    <section class="section section-alt" id="service-area">
-        <div class="section-inner" style="text-align:center;">
-            <h2 class="section-title centered">Service Area</h2>
-            <p class="section-subtitle centered">Mobile couch and upholstery cleaning in Edmonton and surrounding communities.</p>
-            <div class="area-tags">
-                <span class="area-tag">Edmonton</span><span class="area-tag">St. Albert</span><span class="area-tag">Sherwood Park</span><span class="area-tag">Beaumont</span><span class="area-tag">Leduc</span><span class="area-tag">Spruce Grove</span><span class="area-tag">Fort Saskatchewan</span>
-            </div>
-            <p style="margin-top:16px;font-size:0.85rem;">A travel fee may apply outside the main service area.</p>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-        <div class="section-inner">
-            <h2 class="section-title centered">About Clean Edmonton</h2>
-            <p class="section-subtitle centered">Locally operated, focused on clean upholstery.</p>
-            <div class="intro-text" style="margin:0 auto;">
-                <p>We are a locally operated couch and upholstery cleaning business serving <strong>Edmonton and surrounding areas</strong>. We specialize in cleaning couches, sectionals, chairs and other fabric furniture.</p>
-                <p>Our goal is to provide reliable service, clear communication and noticeable results. We take the time to inspect each item and carefully treat problem areas.</p>
-                <p>Whether your furniture needs routine cleaning, stain treatment or help with pet-related messes, <strong>send us pictures for a personalized quote</strong>.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-alt" id="faq">
-        <div class="section-inner">
-            <h2 class="section-title centered">Frequently Asked Questions</h2>
-            <div class="faq-list" style="margin:0 auto;">
-                <div class="faq-item"><button class="faq-question">How much does couch cleaning cost? <span class="faq-arrow">▼</span></button><div class="faq-answer">Pricing depends on size, material, condition. <strong>Send pictures for an accurate quote.</strong> See starting prices above.</div></div>
-                <div class="faq-item"><button class="faq-question">How long does it take? <span class="faq-arrow">▼</span></button><div class="faq-answer">A standard couch takes about 45–90 minutes; large sectionals longer.</div></div>
-                <div class="faq-item"><button class="faq-question">How long to dry? <span class="faq-arrow">▼</span></button><div class="faq-answer">Usually 4–8 hours, depending on fabric, airflow and humidity.</div></div>
-                <div class="faq-item"><button class="faq-question">Can I sit on it immediately? <span class="faq-arrow">▼</span></button><div class="faq-answer">Wait until completely dry to avoid impressions or dirt transfer.</div></div>
-                <div class="faq-item"><button class="faq-question">Do you remove every stain? <span class="faq-arrow">▼</span></button><div class="faq-answer">We treat carefully, but complete removal isn't always guaranteed. Some stains permanently change fabric.</div></div>
-                <div class="faq-item"><button class="faq-question">Can you remove pet urine? <span class="faq-arrow">▼</span></button><div class="faq-answer">We offer pet stain & odor treatment. Results depend on depth of contamination.</div></div>
-                <div class="faq-item"><button class="faq-question">Payment methods? <span class="faq-arrow">▼</span></button><div class="faq-answer">Cash, e-transfer, debit, credit card.</div></div>
-                <div class="faq-item"><button class="faq-question">Cancellation policy? <span class="faq-arrow">▼</span></button><div class="faq-answer">24 hours' notice required. Late cancellations may incur a fee.</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- QUOTE FORM -->
-    <section class="section" id="quote">
-        <div class="section-inner">
-            <h2 class="section-title centered">Get a Free Quote</h2>
-            <p class="section-subtitle centered">Send details and photos for a personalized estimate.</p>
-            <div class="quote-form" style="max-width:700px;margin:0 auto;">
-                <form id="quoteForm" onsubmit="handleQuoteSubmit(event)">
-                    <div class="form-grid">
-                        <div class="form-group"><label>Full Name *</label><input type="text" id="fullName" required></div>
-                        <div class="form-group"><label>Phone *</label><input type="tel" id="phone" required></div>
-                        <div class="form-group"><label>Email *</label><input type="email" id="email" required></div>
-                        <div class="form-group"><label>City *</label><input type="text" id="city" required placeholder="Edmonton"></div>
-                        <div class="form-group"><label>Furniture Type *</label><select id="furnitureType" required><option value="">Select...</option><option>Couch</option><option>Sectional</option><option>Loveseat</option><option>Recliner</option><option>Armchair</option><option>Dining chair</option><option>Office chair</option><option>Ottoman</option><option>Bench</option><option>Headboard</option><option>Other</option></select></div>
-                        <div class="form-group"><label>Number of Items</label><input type="number" value="1" min="1"></div>
-                        <div class="form-group"><label>Main Concern</label><select><option>General cleaning</option><option>Food stain</option><option>Drink stain</option><option>Pet stain</option><option>Pet odor</option><option>Unknown stain</option></select></div>
-                        <div class="form-group full-width"><label>Upload Photos * <small>(JPG, PNG, HEIC)</small></label><input type="file" multiple accept="image/*,.heic,.heif" required></div>
-                        <div class="form-group full-width"><label>Notes</label><textarea rows="3"></textarea></div>
-                    </div>
-                    <div style="text-align:center;margin-top:20px;"><button type="submit" class="btn btn-primary" style="font-size:1.1rem;padding:15px 40px;">Send Quote Request</button></div>
-                    <p class="form-disclaimer">By submitting, you agree to our Privacy Policy.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- BOOKING -->
-    <section class="section section-alt" id="booking">
-        <div class="section-inner" style="text-align:center;">
-            <h2 class="section-title centered">Book a Cleaning</h2>
-            <div class="quote-form" style="max-width:600px;margin:0 auto;text-align:left;">
-                <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
-                    <div class="form-grid">
-                        <div class="form-group full-width"><label>Service *</label><select required><option>Couch Cleaning</option><option>Sectional Cleaning</option><option>Loveseat Cleaning</option><option>Recliner Cleaning</option></select></div>
-                        <div class="form-group"><label>Preferred Date *</label><input type="date" id="bookDate" required></div>
-                        <div class="form-group"><label>Preferred Time</label><select><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
-                        <div class="form-group full-width"><label>Full Name *</label><input type="text" required></div>
-                        <div class="form-group"><label>Phone *</label><input type="tel" required></div>
-                        <div class="form-group"><label>Email *</label><input type="email" required></div>
-                        <div class="form-group full-width"><label>Service Address *</label><input type="text" required></div>
-                    </div>
-                    <div style="text-align:center;margin-top:20px;"><button type="submit" class="btn btn-secondary" style="font-size:1.1rem;padding:15px 40px;">Book Appointment</button></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="section-inner">
-            <h2 class="section-title">Ready to Refresh Your Furniture?</h2>
-            <p>Send us pictures for a personalized quote. We serve Edmonton and surrounding areas.</p>
-            <div class="cta-buttons">
-                <a href="#quote" class="btn btn-primary btn-white" style="color:var(--accent);">Get a Free Quote</a>
-                <a href="#booking" class="btn btn-secondary" style="background:#fff;color:var(--primary);">Book Now</a>
-                <a href="tel:+15875669688" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">📞 Call: +1 (587) 566-9688</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-        <div class="section-inner" style="text-align:center;">
-            <h2 class="section-title centered">Contact Us</h2>
-            <p><strong>📞 Phone:</strong> <a href="tel:+15875669688">+1 (587) 566-9688</a></p>
-            <p><strong>✉️ Email:</strong> info@cleanedmonton.com</p>
-            <p><strong>📍 Service:</strong> Mobile — Edmonton & Surrounding Areas</p>
-            <p><strong>🕐 Hours:</strong> Mon–Sat 8AM–7PM | Sun Closed</p>
-            <div style="margin-top:16px;"><a href="#" class="btn btn-outline">📘 Facebook</a> <a href="#" class="btn btn-outline">📷 Instagram</a></div>
-        </div>
-    </section>
-
-    <!-- DISCLAIMERS -->
-    <section class="section section-alt" id="disclaimers">
-        <div class="section-inner">
-            <h2 class="section-title centered" style="font-size:1.3rem;">Important Disclaimers</h2>
-            <div class="intro-text" style="margin:0 auto;font-size:0.9rem;">
-                <p><strong>Stain Disclaimer:</strong> Complete stain removal not guaranteed. Results depend on fabric, stain age, and previous attempts.</p>
-                <p><strong>Odor Disclaimer:</strong> Odor reduction effectiveness depends on depth of contamination.</p>
-                <p><strong>Fabric Disclaimer:</strong> Some fabrics may react differently; we test before cleaning.</p>
-                <p><strong>Drying Disclaimer:</strong> Drying times are estimates and vary with conditions.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="section-inner">
-            <div class="footer-links"><a href="#hero">Home</a> <a href="#services">Services</a> <a href="#pricing">Pricing</a> <a href="#gallery">Before & After</a> <a href="#about">About</a> <a href="#faq">FAQ</a> <a href="#contact">Contact</a> <a href="#">Privacy Policy</a> <a href="#">Terms</a> <a href="#">Cancellation Policy</a></div>
-            <p>&copy; 2026 Clean Edmonton. All rights reserved. | Mobile Couch & Upholstery Cleaning in Edmonton, AB</p>
-            <p>📞 +1 (587) 566-9688 | ✉️ info@cleanedmonton.com</p>
-        </div>
-    </footer>
-
-    <div class="mobile-sticky-bar">
-        <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
-        <a href="tel:+15875669688" class="btn btn-call">📞 Call Now</a>
+    <div class="header-actions">
+      <a href="tel:+15875669688" class="btn btn--outline btn--sm">📞 (587) 566-9688</a>
+      <a href="#quote" class="btn btn--primary btn--sm">Get a Free Quote</a>
     </div>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileNav = document.getElementById('mobileNav');
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('open');
-            mobileNav.classList.toggle('open');
-            document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
-        });
-        mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-            hamburger.classList.remove('open');
-            mobileNav.classList.remove('open');
-            document.body.style.overflow = '';
-        }));
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-        function initSliders() {
-            document.querySelectorAll('.ba-comparison').forEach(container => {
-                const afterImg = container.querySelector('.img-after');
-                const handle = container.querySelector('.ba-handle');
-                let dragging = false;
-                function update(clientX) {
-                    const rect = container.getBoundingClientRect();
-                    let x = clientX - rect.left;
-                    x = Math.max(0, Math.min(x, rect.width));
-                    const pct = (x / rect.width) * 100;
-                    afterImg.style.clipPath = `inset(0 ${100-pct}% 0 0)`;
-                    handle.style.left = pct + '%';
-                }
-                function onStart(e) { dragging = true; e.preventDefault(); update(e.touches ? e.touches[0].clientX : e.clientX); }
-                function onMove(e) { if (!dragging) return; update(e.touches ? e.touches[0].clientX : e.clientX); }
-                function onEnd() { dragging = false; }
-                container.addEventListener('mousedown', onStart);
-                window.addEventListener('mousemove', onMove);
-                window.addEventListener('mouseup', onEnd);
-                container.addEventListener('touchstart', onStart, {passive: false});
-                window.addEventListener('touchmove', onMove, {passive: false});
-                window.addEventListener('touchend', onEnd);
-                handle.addEventListener('mousedown', onStart);
-                afterImg.style.clipPath = 'inset(0 50% 0 0)';
-                handle.style.left = '50%';
-            });
+<!-- ============================================================
+     MOBILE NAV
+     ============================================================ -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile" aria-hidden="true">
+  <a class="mobile-link" href="#gallery">Before &amp; After</a>
+  <a class="mobile-link" href="#services">Services</a>
+  <a class="mobile-link" href="#how">How It Works</a>
+  <a class="mobile-link" href="#pricing">Pricing</a>
+  <a class="mobile-link" href="#areas">Service Area</a>
+  <a class="mobile-link" href="#reviews">Reviews</a>
+  <a class="mobile-link" href="#faq">FAQ</a>
+  <a class="mobile-link" href="#contact">Contact</a>
+
+  <div class="mobile-cta">
+    <a href="#quote" class="btn btn--primary btn--block">Get a Free Quote</a>
+    <a href="#book" class="btn btn--teal btn--block">Book an Appointment</a>
+    <a href="tel:+15875669688" class="btn btn--outline btn--block">Call (587) 566-9688</a>
+  </div>
+
+  <div class="mobile-meta">
+    <p style="margin:0 0 6px;"><strong>Hours:</strong> Mon–Sat 8AM–7PM · Sunday closed</p>
+    <p style="margin:0;"><a href="mailto:info@cleanedmonton.com">info@cleanedmonton.com</a></p>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ==========================================================
+       HERO
+       ========================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge">⭐ <b>5.0</b> rated by Edmonton homeowners</span>
+
+        <h1>Mobile Couch &amp; Upholstery Cleaning in <span class="accent">Edmonton</span></h1>
+
+        <p class="hero-sub">
+          We come to you. Deep extraction cleaning for sofas, sectionals, loveseats, recliners,
+          dining chairs, headboards and fabric walls — with fast drying and honest, upfront pricing.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#quote" class="btn btn--primary">Get a Free Quote</a>
+          <a href="#book" class="btn btn--teal">Book Now</a>
+          <a href="tel:+15875669688" class="btn btn--outline">📞 Call Us</a>
+        </div>
+
+        <ul class="hero-points">
+          <li><span class="tick" aria-hidden="true">✓</span> Free, no-obligation quotes</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Pet stain &amp; odour specialists</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Usually dry in 4–6 hours</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Serving Edmonton &amp; area</li>
+        </ul>
+      </div>
+
+      <figure class="hero-media" style="margin:0;">
+        <img src="/hero.jpg" alt="Freshly cleaned light grey fabric sofa in a bright Edmonton living room" fetchpriority="high" decoding="async">
+        <figcaption class="hero-float">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p><strong>“Looks brand new again.”</strong>Sectional cleaned in Windermere — same-day booking.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       INTRO
+       ========================================================== -->
+  <section class="section" id="about">
+    <div class="container intro-grid">
+      <div class="intro-copy">
+        <span class="eyebrow">Who we are</span>
+        <h2>Edmonton's mobile upholstery cleaning team</h2>
+        <p>
+          Clean Edmonton is a locally owned, fully mobile couch and upholstery cleaning service.
+          We bring professional-grade hot water extraction equipment directly to your driveway,
+          so there's no hauling furniture and no waiting around for a shop appointment.
+        </p>
+        <p>
+          From everyday traffic and food spills to stubborn pet accidents, dust mites and
+          embedded allergens, we treat each fabric type with the right solution and a careful
+          hand. The result: fresher, softer furniture and a healthier home — usually dry the
+          same day.
+        </p>
+
+        <div class="intro-stats">
+          <div class="stat"><b>5.0★</b><span>Rated</span></div>
+          <div class="stat"><b>4–6h</b><span>Dry Time</span></div>
+          <div class="stat"><b>100%</b><span>Mobile</span></div>
+        </div>
+      </div>
+
+      <div class="form-aside" style="background:linear-gradient(150deg,var(--teal),var(--navy));">
+        <h3>Why homeowners choose us</h3>
+        <p>Straightforward service, no surprises on the invoice.</p>
+        <ul>
+          <li><span class="tick" aria-hidden="true">✓</span> Upfront pricing before we start</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Pet-safe, fabric-safe solutions</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Powerful truck-mounted extraction</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Evening &amp; Saturday appointments</li>
+        </ul>
+        <a href="#quote" class="btn btn--primary btn--block">Request Your Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       BEFORE & AFTER GALLERY
+       ========================================================== -->
+  <section class="section section--gray" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Real results</span>
+        <h2>Before &amp; After</h2>
+        <p>Drag the handle left and right to see the difference our deep extraction cleaning makes.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter gallery by furniture type">
+        <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="sofas" aria-pressed="false">Sofas</button>
+        <button class="filter-btn" data-filter="large-sofas" aria-pressed="false">Large Sofas</button>
+        <button class="filter-btn" data-filter="headboards" aria-pressed="false">Headboards</button>
+        <button class="filter-btn" data-filter="walls" aria-pressed="false">Walls</button>
+      </div>
+
+      <div class="ba-grid" id="baGrid">
+
+        <!-- Sofa -->
+        <article class="ba-pair" data-category="sofas">
+          <div class="ba-slider" role="slider" tabindex="0"
+               aria-label="Before and after: fabric sofa cleaning"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <img class="ba-before" src="/sofa%20unclean.jpeg" alt="Fabric sofa before cleaning, showing dark stains and embedded soil" loading="lazy" decoding="async" draggable="false">
+            <img class="ba-after" src="/sofa%20clean.jpeg" alt="The same fabric sofa after professional cleaning, evenly bright and stain-free" loading="lazy" decoding="async" draggable="false">
+            <span class="ba-tag ba-tag--before">Before</span>
+            <span class="ba-tag ba-tag--after">After</span>
+            <div class="ba-handle" aria-hidden="true"></div>
+          </div>
+          <p class="ba-caption">3-Seat Fabric Sofa <span>Sofas</span></p>
+        </article>
+
+        <!-- Large Sofa -->
+        <article class="ba-pair" data-category="large-sofas">
+          <div class="ba-slider" role="slider" tabindex="0"
+               aria-label="Before and after: large sofa cleaning"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <img class="ba-before" src="/large%20sofa%20unclean.jpeg" alt="Large sofa before cleaning with visible soiling across the cushions" loading="lazy" decoding="async" draggable="false">
+            <img class="ba-after" src="/large%20sofa%20clean.jpeg" alt="The same large sofa after cleaning, refreshed and uniformly clean" loading="lazy" decoding="async" draggable="false">
+            <span class="ba-tag ba-tag--before">Before</span>
+            <span class="ba-tag ba-tag--after">After</span>
+            <div class="ba-handle" aria-hidden="true"></div>
+          </div>
+          <p class="ba-caption">Large Sectional Sofa <span>Large Sofas</span></p>
+        </article>
+
+        <!-- Headboard -->
+        <article class="ba-pair" data-category="headboards">
+          <div class="ba-slider" role="slider" tabindex="0"
+               aria-label="Before and after: upholstered headboard cleaning"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <img class="ba-before" src="/headboard%20unclean.jpeg" alt="Upholstered headboard before cleaning with dust and body-oil staining" loading="lazy" decoding="async" draggable="false">
+            <img class="ba-after" src="/headboard%20clean.jpeg" alt="The same upholstered headboard after cleaning, bright and evenly refreshed" loading="lazy" decoding="async" draggable="false">
+            <span class="ba-tag ba-tag--before">Before</span>
+            <span class="ba-tag ba-tag--after">After</span>
+            <div class="ba-handle" aria-hidden="true"></div>
+          </div>
+          <p class="ba-caption">Upholstered Headboard <span>Headboards</span></p>
+        </article>
+
+        <!-- Wall -->
+        <article class="ba-pair" data-category="walls">
+          <div class="ba-slider" role="slider" tabindex="0"
+               aria-label="Before and after: fabric wall panel cleaning"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <img class="ba-before" src="/wall%20unclean.jpeg" alt="Fabric wall panel before cleaning with marks and discolouration" loading="lazy" decoding="async" draggable="false">
+            <img class="ba-after" src="/wall%20clean.jpeg" alt="The same fabric wall panel after cleaning, restored to a clean even finish" loading="lazy" decoding="async" draggable="false">
+            <span class="ba-tag ba-tag--before">Before</span>
+            <span class="ba-tag ba-tag--after">After</span>
+            <div class="ba-handle" aria-hidden="true"></div>
+          </div>
+          <p class="ba-caption">Fabric Wall Panels <span>Walls</span></p>
+        </article>
+
+      </div>
+
+      <p class="drag-hint">👆 Drag the slider — or focus it and use your arrow keys.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SERVICES
+       ========================================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What we clean</span>
+        <h2>Our Upholstery Cleaning Services</h2>
+        <p>Every piece is pre-inspected, pre-treated and deep extracted — then groomed and left to dry fast.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🛋️</div>
+          <h3>Couch Cleaning</h3>
+          <p>Standard 2- and 3-seat fabric couches cleaned cushion-by-cushion, including under-cushion debris removal.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🪑</div>
+          <h3>Sectional Cleaning</h3>
+          <p>Large L-shape and U-shape sectionals, chaise modules and corner units — priced by seat count, not guesswork.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">💺</div>
+          <h3>Loveseat Cleaning</h3>
+          <p>Compact sofas and two-seaters deep cleaned for traffic lanes, armrest oils and everyday grime.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🦼</div>
+          <h3>Recliner Cleaning</h3>
+          <p>Manual and power recliners, including crevice detailing around mechanisms, footrests and side panels.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🍽️</div>
+          <h3>Dining Chair Cleaning</h3>
+          <p>Fabric dining seats and backs — perfect before hosting, after renovations, or when chairs look tired.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🐾</div>
+          <h3>Pet Stain &amp; Odour Removal</h3>
+          <p>Enzyme treatment that breaks down pet urine and odour at the source, followed by deep extraction.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🧺</div>
+          <h3>Ottoman Cleaning</h3>
+          <p>Footstools, storage ottomans and bench seating refreshed to match the rest of your furniture.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">💼</div>
+          <h3>Office Chair Cleaning</h3>
+          <p>Home-office and commercial task chairs cleaned to cut down on dust, oils and allergen build-up.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       HOW IT WORKS
+       ========================================================== -->
+  <section class="section section--gray" id="how">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Simple process</span>
+        <h2>How It Works</h2>
+        <p>Five easy steps from first message to fresh furniture.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3>Request a Quote</h3>
+          <p>Send us a few photos and details online, or call us. Takes about a minute.</p>
+        </li>
+        <li class="step">
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3>Get Your Estimate</h3>
+          <p>We review your photos and send a clear, fixed price — no obligation, no surprises.</p>
+        </li>
+        <li class="step">
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3>Book a Time</h3>
+          <p>Pick a day and time window that works. Evenings and Saturdays available.</p>
+        </li>
+        <li class="step">
+          <div class="step-num" aria-hidden="true">4</div>
+          <h3>We Deep Clean</h3>
+          <p>We arrive with everything needed, pre-treat, extract and groom your upholstery on site.</p>
+        </li>
+        <li class="step">
+          <div class="step-num" aria-hidden="true">5</div>
+          <h3>Dry &amp; Enjoy</h3>
+          <p>Most furniture is dry within 4–6 hours with good airflow. Then it's back to normal.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       PRICING
+       ========================================================== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Transparent pricing</span>
+        <h2>Starting Prices</h2>
+        <p>Clear starting rates for Edmonton &amp; area. Final pricing depends on size, fabric, and condition.</p>
+      </div>
+
+      <div class="price-grid">
+        <div class="price-card">
+          <span class="name">Dining Chair<span class="note">Per chair, seat &amp; back</span></span>
+          <span class="amount"><small>From</small>$25</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Fabric Wall Panel<span class="note">Per panel</span></span>
+          <span class="amount"><small>From</small>$35</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Ottoman / Footstool<span class="note">Standard size</span></span>
+          <span class="amount"><small>From</small>$40</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Office Chair<span class="note">Task or executive</span></span>
+          <span class="amount"><small>From</small>$45</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Headboard<span class="note">Upholstered, any size</span></span>
+          <span class="amount"><small>From</small>$55</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Pet Stain &amp; Odour<span class="note">Enzyme treatment add-on</span></span>
+          <span class="amount"><small>From</small>$60</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Recliner / Armchair<span class="note">Manual or power</span></span>
+          <span class="amount"><small>From</small>$65</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Loveseat (2-Seat)<span class="note">Includes cushions</span></span>
+          <span class="amount"><small>From</small>$85</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">3-Seat Couch<span class="note">Most popular</span></span>
+          <span class="amount"><small>From</small>$110</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Sectional (3–4 Seat)<span class="note">L-shape or chaise</span></span>
+          <span class="amount"><small>From</small>$140</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Sectional (5–6 Seat)<span class="note">Large modular</span></span>
+          <span class="amount"><small>From</small>$180</span>
+        </div>
+
+        <div class="price-card">
+          <span class="name">Large / U-Shape Sectional<span class="note">7+ seats</span></span>
+          <span class="amount"><small>From</small>$220</span>
+        </div>
+      </div>
+
+      <p class="price-note">
+        Prices are starting points in CAD and may vary with fabric type, soiling level, access and travel distance.
+        Bundle two or more pieces for a better rate — ask when you request your free quote.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SERVICE AREA
+       ========================================================== -->
+  <section class="section section--gray" id="areas">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Where we work</span>
+        <h2>Service Area</h2>
+        <p>Mobile service throughout Edmonton and the surrounding communities. Not sure if we reach you? Just ask.</p>
+      </div>
+
+      <ul class="area-cloud">
+        <li><span class="area-tag area-tag--core">Edmonton</span></li>
+        <li><span class="area-tag">St. Albert</span></li>
+        <li><span class="area-tag">Sherwood Park</span></li>
+        <li><span class="area-tag">Fort Saskatchewan</span></li>
+        <li><span class="area-tag">Spruce Grove</span></li>
+        <li><span class="area-tag">Stony Plain</span></li>
+        <li><span class="area-tag">Leduc</span></li>
+        <li><span class="area-tag">Beaumont</span></li>
+        <li><span class="area-tag">Devon</span></li>
+        <li><span class="area-tag">Morinville</span></li>
+        <li><span class="area-tag">Gibbons</span></li>
+        <li><span class="area-tag">Bon Accord</span></li>
+        <li><span class="area-tag">Nisku</span></li>
+        <li><span class="area-tag">Acheson</span></li>
+        <li><span class="area-tag">Parkland County</span></li>
+        <li><span class="area-tag">Strathcona County</span></li>
+        <li><span class="area-tag">Leduc County</span></li>
+        <li><span class="area-tag">Sturgeon County</span></li>
+        <li><span class="area-tag">Windermere</span></li>
+        <li><span class="area-tag">Terwillegar</span></li>
+        <li><span class="area-tag">Mill Woods</span></li>
+        <li><span class="area-tag">Riverbend</span></li>
+        <li><span class="area-tag">Castle Downs</span></li>
+        <li><span class="area-tag">Clareview</span></li>
+        <li><span class="area-tag">Glenora</span></li>
+        <li><span class="area-tag">Downtown Edmonton</span></li>
+        <li><span class="area-tag">Whyte Avenue</span></li>
+        <li><span class="area-tag">Oliver</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       REVIEWS
+       ========================================================== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Trusted locally</span>
+        <h2>What Edmonton Homeowners Say</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Our sectional had two years of dog hair and coffee spills baked in. It came out looking almost new and was dry by dinner. Super easy to deal with.”</blockquote>
+          <p class="who"><b>Melissa R.</b>Sherwood Park</p>
+        </article>
+
+        <article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Booked for a pet accident that we thought was permanent. The smell is completely gone — not covered up, actually gone. Worth every dollar.”</blockquote>
+          <p class="who"><b>Daniel K.</b>St. Albert</p>
+        </article>
+
+        <article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“They cleaned our dining chairs and upholstered headboard in one visit. On time, tidy, and the quote they gave up front was exactly what we paid.”</blockquote>
+          <p class="who"><b>Priya S.</b>Edmonton — Windermere</p>
+        </article>
+      </div>
+
+      <p class="review-link">Had us out recently? <a href="#">Leave a review</a> — it genuinely helps.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       QUOTE FORM
+       ========================================================== -->
+  <section class="section section--gray" id="quote">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Free &amp; no obligation</span>
+        <h2>Get Your Free Quote</h2>
+        <p>Send a few details and a photo, and we'll get back to you with a clear price — usually the same day.</p>
+      </div>
+
+      <div class="form-layout">
+        <div class="form-wrap">
+          <form data-toast="Thanks! Your quote request was received — we'll be in touch shortly." novalidate>
+            <div class="form-grid form-grid--2">
+              <div class="field">
+                <label for="q-name">Full Name <span class="req">*</span></label>
+                <input type="text" id="q-name" name="name" autocomplete="name" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="field">
+                <label for="q-phone">Phone <span class="req">*</span></label>
+                <input type="tel" id="q-phone" name="phone" autocomplete="tel" placeholder="(587) 555-0123" required>
+              </div>
+
+              <div class="field">
+                <label for="q-email">Email <span class="req">*</span></label>
+                <input type="email" id="q-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="field">
+                <label for="q-city">City / Neighbourhood <span class="req">*</span></label>
+                <input type="text" id="q-city" name="city" autocomplete="address-level2" placeholder="Edmonton — Terwillegar" required>
+              </div>
+
+              <div class="field">
+                <label for="q-type">Furniture Type <span class="req">*</span></label>
+                <select id="q-type" name="furniture" required>
+                  <option value="">Please choose…</option>
+                  <option>Couch / Sofa</option>
+                  <option>Sectional</option>
+                  <option>Loveseat</option>
+                  <option>Recliner / Armchair</option>
+                  <option>Dining Chairs</option>
+                  <option>Ottoman</option>
+                  <option>Office Chair</option>
+                  <option>Headboard</option>
+                  <option>Fabric Wall Panels</option>
+                  <option>Pet Stain &amp; Odour Treatment</option>
+                  <option>Multiple items</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="q-photo">Photo of the Furniture</label>
+                <input type="file" id="q-photo" name="photo" accept="image/*" multiple>
+                <span class="field-hint">Optional, but it helps us quote accurately and quickly.</span>
+              </div>
+            </div>
+
+            <div class="field" style="margin-top:16px;">
+              <label for="q-notes">Anything else we should know?</label>
+              <textarea id="q-notes" name="notes" placeholder="Number of seats, stains or odours, pets, fabric type, parking/access notes, preferred timing…"></textarea>
+            </div>
+
+            <div class="form-foot">
+              <p class="privacy">We only use your details to prepare and follow up on your quote.</p>
+              <button type="submit" class="btn btn--primary">Send My Quote Request</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+          <p>Call or text us and we'll price it over the phone in a couple of minutes.</p>
+
+          <span class="aside-phone-label">Call or text</span>
+          <a class="aside-phone" href="tel:+15875669688">(587) 566-9688</a>
+
+          <ul>
+            <li><span class="tick" aria-hidden="true">✓</span> Free quotes, no obligation</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Mon–Sat, 8AM–7PM</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Same-day replies in most cases</li>
+          </ul>
+
+          <a href="mailto:info@cleanedmonton.com" class="btn btn--ghost-light btn--block">Email info@cleanedmonton.com</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       BOOKING
+       ========================================================== -->
+  <section class="section" id="book">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ready when you are</span>
+        <h2>Book an Appointment</h2>
+        <p>Already have a price? Pick a date and time window and we'll confirm by phone.</p>
+      </div>
+
+      <div class="form-layout">
+        <div class="form-wrap">
+          <form data-toast="Booking request sent! We'll confirm your time window by phone." novalidate>
+            <div class="form-grid form-grid--2">
+              <div class="field">
+                <label for="b-name">Full Name <span class="req">*</span></label>
+                <input type="text" id="b-name" name="name" autocomplete="name" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="field">
+                <label for="b-phone">Phone <span class="req">*</span></label>
+                <input type="tel" id="b-phone" name="phone" autocomplete="tel" placeholder="(587) 555-0123" required>
+              </div>
+
+              <div class="field">
+                <label for="b-date">Preferred Date <span class="req">*</span></label>
+                <input type="date" id="b-date" name="date" required>
+              </div>
+
+              <div class="field">
+                <label for="b-time">Preferred Time Window <span class="req">*</span></label>
+                <select id="b-time" name="time" required>
+                  <option value="">Please choose…</option>
+                  <option>8:00 AM – 10:00 AM</option>
+                  <option>10:00 AM – 12:00 PM</option>
+                  <option>12:00 PM – 2:00 PM</option>
+                  <option>2:00 PM – 4:00 PM</option>
+                  <option>4:00 PM – 6:00 PM</option>
+                  <option>Flexible — any time</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="b-service">Service <span class="req">*</span></label>
+                <select id="b-service" name="service" required>
+                  <option value="">Please choose…</option>
+                  <option>Couch / Sofa Cleaning</option>
+                  <option>Sectional Cleaning</option>
+                  <option>Loveseat Cleaning</option>
+                  <option>Recliner / Armchair Cleaning</option>
+                  <option>Dining Chair Cleaning</option>
+                  <option>Ottoman Cleaning</option>
+                  <option>Office Chair Cleaning</option>
+                  <option>Headboard Cleaning</option>
+                  <option>Fabric Wall Panel Cleaning</option>
+                  <option>Pet Stain &amp; Odour Treatment</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="b-address">Address / Postal Code <span class="req">*</span></label>
+                <input type="text" id="b-address" name="address" autocomplete="street-address" placeholder="123 Main St, Edmonton, T5T 0A1" required>
+              </div>
+            </div>
+
+            <div class="field" style="margin-top:16px;">
+              <label for="b-notes">Notes for the technician</label>
+              <textarea id="b-notes" name="notes" placeholder="Gate codes, parking, pets at home, stairs, fabric details…"></textarea>
+            </div>
+
+            <div class="form-foot">
+              <p class="privacy">Booking requests are confirmed by phone before they're final.</p>
+              <button type="submit" class="btn btn--teal">Request This Time</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Good to know</h3>
+          <p>Here's what helps your appointment go smoothly.</p>
+          <ul>
+            <li><span class="tick" aria-hidden="true">✓</span> Clear access to a power outlet and parking</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Please remove personal items from cushions</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Airflow and a fan speed up drying</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Keep pets settled while we work</li>
+          </ul>
+          <a href="tel:+15875669688" class="btn btn--primary btn--block">📞 Call to Book Faster</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CTA BANNER
+       ========================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to Refresh Your Furniture?</h2>
+        <p>Get a free, no-obligation quote today — or call us and we'll price it over the phone in minutes.</p>
+        <div class="cta-row">
+          <a href="#quote" class="btn btn--primary">Get a Free Quote</a>
+          <a href="tel:+15875669688" class="btn btn--ghost-light">📞 (587) 566-9688</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FAQ
+       ========================================================== -->
+  <section class="section section--gray" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How long does upholstery take to dry?
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>Most couches and sectionals are dry within 4–6 hours with good airflow. Denser fabrics, high humidity or a cold room can stretch that to 8–12 hours. Running a fan or opening a window helps a lot.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do you guarantee stain removal?
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>We remove the large majority of stains, but some can be permanent — particularly ink, dye, bleach damage, burns, or stains that have been set by heat or time. We'll always tell you honestly what we expect before we start.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can you get rid of pet odours completely?
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>In most cases, yes. We use enzyme treatments that break down the proteins in pet urine rather than masking the smell, followed by deep extraction. Severe or long-standing contamination that has soaked into the foam or subfloor may need repeat treatment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is the cleaning safe for my fabric and my family?
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>We identify the fabric type first and select a solution and method to suit it. We use pet-safe and family-safe products, and everything is extracted thoroughly so no residue is left behind.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I need to do anything before you arrive?
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>Just clear personal items off the furniture and make sure we have parking and access to an outdoor power outlet if possible. We bring everything else, including hoses and equipment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How do I pay, and is there a deposit?
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>No deposit for standard bookings. Payment is due once the work is finished, and we accept cash, credit card and Interac e-Transfer. You'll see the final price before we begin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CONTACT
+       ========================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Contact Clean Edmonton</h2>
+        <p>Call, text or email — we're happy to answer questions before you book.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="service-icon" aria-hidden="true">📞</div>
+          <h3>Phone / Text</h3>
+          <a class="big" href="tel:+15875669688">+1 (587) 566-9688</a>
+          <p>Fastest way to reach us during business hours.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="service-icon" aria-hidden="true">✉️</div>
+          <h3>Email</h3>
+          <a class="big" href="mailto:info@cleanedmonton.com">info@cleanedmonton.com</a>
+          <p>Send photos for a faster, more accurate quote.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="service-icon" aria-hidden="true">🕗</div>
+          <h3>Hours</h3>
+          <p><strong>Monday – Saturday:</strong> 8:00 AM – 7:00 PM</p>
+          <p><strong>Sunday:</strong> Closed</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="service-icon" aria-hidden="true">📍</div>
+          <h3>Service Area</h3>
+          <p>Edmonton, St. Albert, Sherwood Park, Spruce Grove, Leduc, Beaumont and surrounding communities.</p>
+          <div class="social-row" aria-label="Social links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Google Business Profile">G</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       DISCLAIMERS
+       ========================================================== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="disclaimers">
+        <h3>Service disclaimers</h3>
+        <ul>
+          <li><strong>Stains:</strong> Results vary by stain type and age. Ink, dye, bleach, burn marks, rust and long-set stains may not be fully removable. We'll advise you before starting.</li>
+          <li><strong>Odours:</strong> Pet odour treatment is highly effective but severe or long-standing contamination that has penetrated foam, padding or subfloor may require repeat treatments.</li>
+          <li><strong>Fabric:</strong> Some fabrics are delicate, prone to shrinkage, colour bleed, pilling or browning. We follow manufacturer codes where available and always test first — but pre-existing wear, fading or damage may become more visible after cleaning.</li>
+          <li><strong>Drying:</strong> Typical dry time is 4–6 hours but depends on fabric, humidity, airflow and temperature. Please allow adequate drying time before use.</li>
+          <li><strong>Warranty &amp; wear:</strong> Cleaning does not repair structural damage, broken frames, worn seams, sagging cushions or failed foam.</li>
+          <li><strong>Pricing:</strong> All prices shown are starting rates in CAD and may be adjusted after on-site assessment of size, fabric, soiling and access.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Clean Edmonton — home">
+          <span class="logo-mark" aria-hidden="true">C</span>
+          <span class="logo-text">Clean Edmonton<small>Couch &amp; Upholstery</small></span>
+        </a>
+        <p>Mobile couch, sofa and upholstery cleaning serving Edmonton, Alberta and surrounding communities.</p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Couch Cleaning</a></li>
+          <li><a href="#services">Sectional Cleaning</a></li>
+          <li><a href="#services">Loveseat Cleaning</a></li>
+          <li><a href="#services">Recliner Cleaning</a></li>
+          <li><a href="#services">Pet Stain &amp; Odour</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Before &amp; After</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#areas">Service Area</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+15875669688">+1 (587) 566-9688</a></li>
+          <li><a href="mailto:info@cleanedmonton.com">info@cleanedmonton.com</a></li>
+          <li>Mon–Sat: 8AM–7PM</li>
+          <li>Sunday: Closed</li>
+          <li><a href="#quote">Get a Free Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2025</span> Clean Edmonton. All rights reserved.</span>
+      <span>Edmonton, Alberta, Canada</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MOBILE STICKY BAR
+     ============================================================ -->
+<div class="mobile-bar" role="group" aria-label="Quick actions">
+  <a href="#quote" class="btn btn--primary">Get a Quote</a>
+  <a href="tel:+15875669688" class="btn btn--navy">📞 Call Now</a>
+</div>
+
+<!-- ============================================================
+     TOAST
+     ============================================================ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ==========================================================
+     1. MOBILE MENU
+     ========================================================== */
+  var burger    = document.getElementById('burger');
+  var mobileNav = document.getElementById('mobileNav');
+
+  function setNav(open) {
+    document.body.classList.toggle('nav-open', open);
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    mobileNav.classList.toggle('is-open', open);
+    mobileNav.setAttribute('aria-hidden', String(!open));
+  }
+
+  if (burger && mobileNav) {
+    burger.addEventListener('click', function () {
+      setNav(!mobileNav.classList.contains('is-open'));
+    });
+
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () { setNav(false); });
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileNav.classList.contains('is-open')) {
+        setNav(false);
+        burger.focus();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 900 && mobileNav.classList.contains('is-open')) {
+        setNav(false);
+      }
+    });
+  }
+
+  /* ==========================================================
+     2. BEFORE / AFTER SLIDERS
+     ========================================================== */
+  document.querySelectorAll('.ba-slider').forEach(function (slider) {
+
+    function setPos(pct) {
+      pct = Math.max(0, Math.min(100, pct));
+      slider.style.setProperty('--pos', pct + '%');
+      slider.setAttribute('aria-valuenow', String(Math.round(pct)));
+    }
+
+    function posFromEvent(e) {
+      var rect = slider.getBoundingClientRect();
+      if (!rect.width) return;
+      setPos(((e.clientX - rect.left) / rect.width) * 100);
+    }
+
+    var dragging = false;
+
+    slider.addEventListener('pointerdown', function (e) {
+      dragging = true;
+      slider.classList.add('is-dragging');
+      if (slider.setPointerCapture) {
+        try { slider.setPointerCapture(e.pointerId); } catch (err) {}
+      }
+      posFromEvent(e);
+    });
+
+    slider.addEventListener('pointermove', function (e) {
+      if (!dragging) return;
+      e.preventDefault();
+      posFromEvent(e);
+    });
+
+    function endDrag() {
+      if (!dragging) return;
+      dragging = false;
+      slider.classList.remove('is-dragging');
+    }
+
+    slider.addEventListener('pointerup', endDrag);
+    slider.addEventListener('pointercancel', endDrag);
+    slider.addEventListener('pointerleave', function (e) {
+      /* Only end if the pointer wasn't captured */
+      if (!slider.hasPointerCapture || !slider.hasPointerCapture(e.pointerId)) endDrag();
+    });
+
+    /* Keyboard accessibility */
+    slider.addEventListener('keydown', function (e) {
+      var current = parseFloat(slider.getAttribute('aria-valuenow')) || 50;
+      var step = e.shiftKey ? 20 : 5;
+      var handled = true;
+
+      switch (e.key) {
+        case 'ArrowLeft':  setPos(current - step); break;
+        case 'ArrowRight': setPos(current + step); break;
+        case 'Home':       setPos(0); break;
+        case 'End':        setPos(100); break;
+        default: handled = false;
+      }
+
+      if (handled) e.preventDefault();
+    });
+
+    /* Prevent native image dragging */
+    slider.querySelectorAll('img').forEach(function (img) {
+      img.addEventListener('dragstart', function (e) { e.preventDefault(); });
+    });
+
+    setPos(50);
+  });
+
+  /* ==========================================================
+     3. GALLERY FILTERING
+     ========================================================== */
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var pairs      = document.querySelectorAll('.ba-pair');
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filterBtns.forEach(function (b) {
+        var active = (b === btn);
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+
+      var filter = btn.dataset.filter;
+
+      pairs.forEach(function (pair) {
+        var show = (filter === 'all') || (pair.dataset.category === filter);
+        pair.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
+
+  /* ==========================================================
+     4. FAQ ACCORDION (one open at a time)
+     ========================================================== */
+  var faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(function (item) {
+    var button = item.querySelector('.faq-q');
+    var panel  = item.querySelector('.faq-a');
+
+    button.addEventListener('click', function () {
+      var isOpen = item.classList.contains('is-open');
+
+      faqItems.forEach(function (other) {
+        other.classList.remove('is-open');
+        other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        other.querySelector('.faq-a').style.maxHeight = '';
+      });
+
+      if (!isOpen) {
+        item.classList.add('is-open');
+        button.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* Recalculate open FAQ height on resize */
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      var open = document.querySelector('.faq-item.is-open .faq-a');
+      if (open) {
+        open.style.maxHeight = 'none';
+        var h = open.scrollHeight;
+        open.style.maxHeight = h + 'px';
+      }
+    }, 150);
+  });
+
+  /* ==========================================================
+     5. SMOOTH ANCHOR SCROLLING (header offset)
+     ========================================================== */
+  var header = document.getElementById('siteHeader');
+
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var href = link.getAttribute('href');
+      if (!href || href === '#') return;
+
+      var target = document.querySelector(href);
+      if (!target) return;
+
+      e.preventDefault();
+
+      var offset = (header ? header.offsetHeight : 0) + 14;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: Math.max(top, 0),
+        behavior: 'smooth'
+      });
+
+      if (history.replaceState) {
+        history.replaceState(null, '', href);
+      }
+    });
+  });
+
+  /* ==========================================================
+     6. TOAST NOTIFICATIONS
+     ========================================================== */
+  var toastEl   = document.getElementById('toast');
+  var toastTimer = null;
+
+  function showToast(message) {
+    if (!toastEl) return;
+    toastEl.textContent = message;
+    toastEl.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toastEl.classList.remove('is-visible');
+    }, 4500);
+  }
+
+  /* ==========================================================
+     7. FORM HANDLERS (no backend — swap for your endpoint)
+     ========================================================== */
+  document.querySelectorAll('form[data-toast]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      /* Native validation (forms use novalidate so we control the UI) */
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      /* ------------------------------------------------------
+         TODO: Replace this block with a real submission, e.g.:
+         fetch(form.action, { method: 'POST', body: new FormData(form) })
+           .then(...)
+         Works with Formspree, Netlify Forms, Basin, Web3Forms, etc.
+         ------------------------------------------------------ */
+
+      var button = form.querySelector('button[type="submit"]');
+      var originalText = button ? button.textContent : '';
+
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Sending…';
+      }
+
+      setTimeout(function () {
+        showToast(form.dataset.toast || 'Thanks! We received your message.');
+        form.reset();
+
+        /* Restore the date minimum after reset */
+        form.querySelectorAll('input[type="date"]').forEach(function (input) {
+          input.min = todayISO();
+        });
+
+        if (button) {
+          button.disabled = false;
+          button.textContent = originalText;
         }
-        initSliders();
+      }, 450);
+    });
+  });
 
-        document.querySelectorAll('.gallery-filters button').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.gallery-filters button').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const filter = btn.dataset.filter;
-                document.querySelectorAll('.ba-pair').forEach(pair => {
-                    pair.style.display = (filter === 'all' || pair.dataset.category === filter) ? '' : 'none';
-                });
-            });
-        });
+  /* ==========================================================
+     8. DATE INPUT — minimum bookable date is today
+     ========================================================== */
+  function todayISO() {
+    var now = new Date();
+    var local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+    return local.toISOString().slice(0, 10);
+  }
 
-        document.querySelectorAll('.faq-item .faq-question').forEach(q => {
-            q.addEventListener('click', () => {
-                const item = q.parentElement;
-                document.querySelectorAll('.faq-item').forEach(i => { if (i !== item) i.classList.remove('open'); });
-                item.classList.toggle('open');
-            });
-        });
+  document.querySelectorAll('input[type="date"]').forEach(function (input) {
+    input.min = todayISO();
+  });
 
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
-                }
-            });
-        });
+  /* ==========================================================
+     9. HEADER SHADOW ON SCROLL
+     ========================================================== */
+  if (header) {
+    var ticking = false;
 
-        function showToast(msg) {
-            const t = document.createElement('div');
-            t.className = 'toast';
-            t.textContent = msg;
-            document.body.appendChild(t);
-            setTimeout(() => t.remove(), 3200);
-        }
-        function handleQuoteSubmit(e) { e.preventDefault(); showToast('✅ Quote request received!'); e.target.reset(); }
-        function handleBookingSubmit(e) { e.preventDefault(); showToast('✅ Booking request received!'); e.target.reset(); }
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        header.classList.toggle('is-scrolled', window.pageYOffset > 8);
+        ticking = false;
+      });
+    }
 
-        const dateInput = document.getElementById('bookDate');
-        if (dateInput) {
-            const today = new Date();
-            dateInput.min = today.toISOString().split('T')[0];
-        }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 
-        console.log('✅ Clean Edmonton — Gallery now appears right after introduction.');
-    </script>
+  /* ==========================================================
+     10. FOOTER YEAR
+     ========================================================== */
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+})();
+</script>
 </body>
 </html>
